@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://siabanamilimo003-star.github.io/siabanamilimo/sitemap.xml
