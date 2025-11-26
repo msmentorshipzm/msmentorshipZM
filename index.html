@@ -3,57 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milimo Siabana - STEM Enthusiast | A Level Graduate | Dux Scholar</title>
+    <title>Milimo Siabana's - Education & Career Opportunities</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Milimo Siabana - Award-winning STEM scholar from Zambia. A Level Graduate, National Mathematics Olympiad Winner, SESTUZ Scholarship recipient. Passionate about education and mentoring.">
-    <meta name="keywords" content="Milimo Siabana, STEM Zambia, Mathematics Olympiad, SESTUZ Scholarship, Hillcrest School, Trident College, Education Zambia, STEM Education">
+    <meta name="description" content="Milimo Siabana's initiative connecting Zambian students to university applications, scholarships, work placements, and career opportunities">
+    <meta name="keywords" content="Milimo Siabana, Zambia scholarships, university applications, work placements, freelancing opportunities, education Zambia, private tutoring, advertising services">
     <meta name="author" content="Milimo Siabana">
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="google923cd2ed2fae79c3" />
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Milimo Siabana - STEM Scholar & A Level Graduate">
-    <meta property="og:description" content="Award-winning STEM student from Zambia with national mathematics awards and scholarship achievements">
+    <meta property="og:title" content="Milimo Siabana's - Education & Career Opportunities">
+    <meta property="og:description" content="Connecting Zambian students to education, careers, and opportunities through mentorship and guidance">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://siabanamilimo003-star.github.io/siabanamilimo/">
     <meta property="og:image" content="https://siabanamilimo003-star.github.io/siabanamilimo/profile-img.jpg">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://siabanamilimo003-star.github.io/siabanamilimo/">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Milimo Siabana",
-      "url": "https://siabanamilimo003-star.github.io/siabanamilimo/",
-      "description": "Award-winning STEM scholar from Zambia with national mathematics awards",
-      "alumniOf": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Trident College Solwezi"
-        },
-        {
-          "@type": "EducationalOrganization", 
-          "name": "Hillcrest National STEM Secondary School"
-        }
-      ],
-      "award": [
-        "Dux Scholar 2025",
-        "National Senior Mathematics Olympiad Winner 2023",
-        "SESTUZ Scholarship Recipient"
-      ],
-      "knowsAbout": [
-        "STEM Education",
-        "Mathematics",
-        "Data Analytics",
-        "Mining Engineering"
-      ]
-    }
-    </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -61,7 +26,7 @@
         /* Base Styles */
         :root {
             --primary: #1a3a5f;
-            --secondary: #3498db;
+            --secondary: #2ecc71;
             --accent: #e74c3c;
             --light: #ecf0f1;
             --dark: #2c3e50;
@@ -69,7 +34,8 @@
             --text-light: #7f8c8d;
             --success: #27ae60;
             --gold: #f1c40f;
-            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, #3498db 100%);
+            --gradient-green: linear-gradient(135deg, var(--secondary) 0%, #27ae60 100%);
         }
         
         * {
@@ -94,7 +60,7 @@
         }
         
         section {
-            padding: 100px 0;
+            padding: 80px 0;
         }
         
         h1, h2, h3, h4 {
@@ -110,7 +76,7 @@
         h2 {
             font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             position: relative;
         }
         
@@ -181,7 +147,7 @@
         
         /* Header & Navigation */
         header {
-            background-color: rgba(255, 255, 255, 0.95);
+            background: var(--gradient);
             box-shadow: 0 2px 15px rgba(0,0,0,0.1);
             position: fixed;
             width: 100%;
@@ -192,25 +158,25 @@
         
         header.scrolled {
             padding: 5px 0;
-            background-color: rgba(255, 255, 255, 0.98);
+            background: var(--gradient);
         }
         
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 15px 0;
             transition: all 0.3s;
         }
         
         header.scrolled nav {
-            padding: 10px 0;
+            padding: 8px 0;
         }
         
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--primary);
+            color: white;
             font-family: 'Playfair Display', serif;
         }
         
@@ -220,13 +186,14 @@
         }
         
         .nav-links li {
-            margin-left: 30px;
+            margin-left: 25px;
         }
         
         .nav-links a {
-            color: var(--dark);
+            color: white;
             font-weight: 500;
             position: relative;
+            padding: 5px 0;
         }
         
         .nav-links a:after {
@@ -236,7 +203,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: var(--secondary);
+            background-color: white;
             transition: width 0.3s;
         }
         
@@ -248,59 +215,78 @@
             display: none;
             cursor: pointer;
             font-size: 1.5rem;
+            color: white;
         }
         
-        /* Hero Section */
+        /* Hero Section with Sliding Background */
         .hero {
-            background: var(--gradient);
-            color: white;
-            padding: 180px 0 120px;
-            text-align: center;
+            height: 100vh;
             position: relative;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
         }
         
-        .hero:before {
-            content: '';
+        .hero-background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path d="M0,0 V100 Q500,50 1000,100 V0 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            z-index: -1;
+        }
+        
+        .background-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
             background-size: cover;
+            background-position: center;
+        }
+        
+        .background-slide.active {
+            opacity: 1;
+        }
+        
+        .background-slide.video-bg video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 2;
         }
         
         .hero h1 {
             color: white;
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin-bottom: 20px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
         
         .hero p {
+            color: white;
             font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            opacity: 0.9;
-        }
-        
-        .profile-img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 5px solid rgba(255,255,255,0.3);
-            margin: 0 auto 30px;
-            position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .profile-img img {
-            width: 100%;
-            height: 150%;
-            object-fit: cover;
-            display: block;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
         
         .hero-badges {
@@ -323,54 +309,457 @@
             border: 1px solid rgba(255,255,255,0.2);
         }
         
-        /* Professional Summary */
-        .summary {
-            background-color: white;
-            position: relative;
-        }
-        
-        .summary-content {
-            max-width: 800px;
-            margin: 0 auto;
+        /* Milimo Siabana's Acronym Section */
+        .ms-connect-section {
+            background: var(--gradient-green);
+            color: white;
+            padding: 60px 0;
             text-align: center;
         }
         
-        /* Biography Section */
-        .biography {
-            background-color: #f5f7fa;
+        .acronym-container {
+            max-width: 800px;
+            margin: 0 auto;
         }
         
-        .biography-content {
+        .acronym-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .acronym-grid {
             display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 50px;
-            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
         }
         
-        .biography-image {
+        .acronym-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
         
-        .biography-image img {
-            width: 100%;
-            height: auto;
+        .acronym-letter {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
             display: block;
-            transition: transform 0.5s;
         }
         
-        .biography-image:hover img {
-            transform: scale(1.05);
+        .acronym-meaning {
+            font-size: 0.9rem;
+            opacity: 0.9;
         }
         
-        .biography-text h3 {
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border-top: 4px solid var(--secondary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary);
             margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 15px;
             color: var(--primary);
         }
         
-        .biography-text p {
+        .service-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
             margin-bottom: 20px;
+        }
+        
+        /* Page Sections (Hidden by default) */
+        .page-section {
+            display: none;
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .page-section.active {
+            display: block;
+        }
+        
+        .back-btn {
+            margin-bottom: 30px;
+            background: var(--primary);
+        }
+        
+        .back-btn:hover {
+            background: var(--dark);
+        }
+        
+        /* Content Sections */
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--secondary);
+        }
+        
+        /* Button Grid */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .section-btn {
+            background: var(--gradient);
+            color: white;
+            padding: 25px 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .section-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        /* Media Gallery */
+        .media-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .media-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 1;
+        }
+        
+        .media-item img, .media-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .media-item:hover img, .media-item:hover video {
+            transform: scale(1.05);
+        }
+        
+        .media-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            font-size: 0.8rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .media-item:hover .media-caption {
+            transform: translateY(0);
+        }
+        
+        /* Scholarship Categories */
+        .scholarship-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--secondary);
+            transition: transform 0.3s;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .category-icon {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+        
+        /* University Grid */
+        .university-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .university-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--secondary);
+            transition: transform 0.3s;
+        }
+        
+        .university-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .university-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .contact-link {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-link:hover {
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+            background: var(--secondary);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #bbb;
+        }
+        
+        /* Scholarship Detail Styles */
+        .scholarship-details {
+            margin-top: 20px;
+        }
+        
+        .detail-section {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .detail-section h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .detail-section ul {
+            padding-left: 20px;
+        }
+        
+        .detail-section li {
+            margin-bottom: 8px;
+        }
+        
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .timeline-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .timeline-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+        
+        .timeline-note {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 10px;
+            font-style: italic;
         }
         
         /* Early Life Images */
@@ -402,11 +791,34 @@
             color: var(--text-light);
         }
         
-        /* Education Section */
-        .education {
-            background-color: white;
+        /* Scholarship Video */
+        .scholarship-video {
+            margin: 60px 0;
+            text-align: center;
         }
         
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            display: block;
+        }
+        
+        .video-caption {
+            margin-top: 20px;
+            font-style: italic;
+            color: var(--text-light);
+        }
+        
+        /* Education Cards */
         .education-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -445,29 +857,6 @@
             transform: scale(1.1);
         }
         
-        .education-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
-        .education-card:hover .education-overlay {
-            opacity: 1;
-        }
-        
-        .education-overlay .btn {
-            background: rgba(255,255,255,0.9);
-            color: var(--primary);
-        }
-        
         .education-info {
             padding: 25px;
         }
@@ -489,116 +878,7 @@
             margin-bottom: 10px;
         }
         
-        /* SESTUZ Scholarship Video */
-        .scholarship-video {
-            margin: 60px 0;
-            text-align: center;
-        }
-        
-        .video-container {
-            max-width: 800px;
-            margin: 0 auto;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .video-container iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
-            display: block;
-        }
-        
-        .video-caption {
-            margin-top: 20px;
-            font-style: italic;
-            color: var(--text-light);
-        }
-        
-        /* Education Details Modal */
-        .education-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s;
-        }
-        
-        .education-modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .modal-content {
-            background: white;
-            width: 90%;
-            max-width: 800px;
-            border-radius: 12px;
-            overflow: hidden;
-            transform: translateY(50px);
-            transition: transform 0.5s;
-            max-height: 90vh;
-            overflow-y: auto;
-        }
-        
-        .education-modal.active .modal-content {
-            transform: translateY(0);
-        }
-        
-        .modal-header {
-            padding: 25px;
-            background: var(--gradient);
-            color: white;
-            position: relative;
-        }
-        
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        .modal-body {
-            padding: 30px;
-        }
-        
-        .education-achievements ul {
-            list-style-type: none;
-        }
-        
-        .education-achievements li {
-            margin-bottom: 12px;
-            padding-left: 25px;
-            position: relative;
-        }
-        
-        .education-achievements li:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            color: var(--success);
-            font-weight: bold;
-        }
-        
         /* Experience Section */
-        .experience {
-            background-color: #f5f7fa;
-        }
-        
         .experience-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -644,10 +924,6 @@
         }
         
         /* Skills Section */
-        .skills {
-            background-color: white;
-        }
-        
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -683,63 +959,7 @@
             border-bottom: 1px dashed #f0f0f0;
         }
         
-        /* Achievements Section */
-        .achievements {
-            background-color: #f5f7fa;
-        }
-        
-        .achievements-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .achievement-card {
-            text-align: center;
-            padding: 30px 20px;
-            background-color: white;
-            border-radius: 8px;
-            transition: transform 0.3s;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .achievement-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .achievement-card:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background-color: var(--secondary);
-        }
-        
-        .achievement-icon {
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 20px;
-        }
-        
-        .achievement-year {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-        }
-        
         /* Updates Section */
-        .updates {
-            background-color: white;
-        }
-        
         .updates-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -784,194 +1004,102 @@
             margin-bottom: 10px;
         }
         
-        /* Scholarships Section */
-        .scholarships {
-            background-color: #f5f7fa;
-        }
-        
-        .scholarships-grid {
+        /* Scholarship Links */
+        .scholarship-links {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
         
-        .scholarship-card {
-            background-color: white;
+        .scholarship-link {
+            background: var(--gradient);
+            color: white;
+            padding: 15px;
             border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+            text-align: center;
+            transition: all 0.3s;
+            display: block;
         }
         
-        .scholarship-card:hover {
-            transform: translateY(-10px);
+        .scholarship-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
         
-        .scholarship-image {
-            height: 180px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .scholarship-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .scholarship-card:hover .scholarship-image img {
-            transform: scale(1.1);
-        }
-        
-        .scholarship-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
-        .scholarship-card:hover .scholarship-overlay {
-            opacity: 1;
-        }
-        
-        .scholarship-content {
-            padding: 25px;
-        }
-        
-        .scholarship-deadline {
-            background: var(--accent);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-        
-        .scholarship-eligibility {
-            margin-top: 15px;
-            font-size: 0.9rem;
-            color: var(--text-light);
-        }
-        
-        /* Contact Section */
-        .contact {
-            background-color: var(--primary);
-            color: white;
+        /* Rotating Scholarships */
+        .rotating-scholarships {
+            margin: 40px 0;
             text-align: center;
         }
         
-        .contact h2 {
+        .scholarship-slide {
+            display: none;
+            padding: 30px;
+            background: var(--gradient-green);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .scholarship-slide.active {
+            display: block;
+        }
+        
+        /* Collapsible HELSB Section */
+        .helsb-details {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .helsb-details.active {
+            display: block;
+        }
+        
+        /* Quick Links Section */
+        .quick-links {
+            background: var(--gradient);
+            padding: 40px 0;
+            text-align: center;
             color: white;
         }
         
-        .contact h2:after {
-            background-color: white;
-        }
-        
-        .contact-info {
+        .quick-links-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 1.1rem;
-        }
-        
-        .contact-item i {
-            font-size: 1.5rem;
-            color: var(--secondary);
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
             gap: 20px;
-            margin-top: 30px;
+            margin-top: 20px;
         }
         
-        .social-links a {
+        .quick-link {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 30px;
             color: white;
-            font-size: 1.5rem;
-            transition: transform 0.3s;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
         
-        .social-links a:hover {
-            transform: translateY(-5px);
-            background: var(--secondary);
+        .quick-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
         }
         
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            text-align: center;
-            padding: 40px 0;
-        }
-        
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: white;
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .footer-quote {
-            font-style: italic;
-            opacity: 0.8;
+        /* Tutoring Form */
+        .tutoring-form {
             max-width: 600px;
             margin: 0 auto;
         }
         
         /* Responsive Design */
-        @media (max-width: 992px) {
-            .biography-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            
-            .biography-image {
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            
-            .early-life-images {
-                grid-template-columns: 1fr;
-            }
-            
-            .video-container iframe {
-                height: 400px;
-            }
-        }
-        
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -979,10 +1107,10 @@
             
             .nav-links {
                 position: fixed;
-                top: 80px;
+                top: 70px;
                 left: 0;
                 width: 100%;
-                background-color: white;
+                background: var(--gradient);
                 flex-direction: column;
                 align-items: center;
                 padding: 20px 0;
@@ -1012,19 +1140,31 @@
                 font-size: 2rem;
             }
             
-            .contact-info {
-                flex-direction: column;
-                gap: 20px;
+            .acronym-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .content-section {
+                padding: 25px;
+            }
+            
+            .early-life-images {
+                grid-template-columns: 1fr;
             }
             
             .video-container iframe {
                 height: 300px;
             }
+            
+            .quick-links-container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         
         @media (max-width: 576px) {
             .hero {
-                padding: 150px 0 80px;
+                height: 80vh;
             }
             
             .hero h1 {
@@ -1032,12 +1172,15 @@
             }
             
             section {
-                padding: 70px 0;
+                padding: 60px 0;
             }
             
-            .profile-img {
-                width: 180px;
-                height: 180px;
+            .acronym-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .button-grid {
+                grid-template-columns: 1fr;
             }
             
             .video-container iframe {
@@ -1051,694 +1194,711 @@
     <header id="header">
         <div class="container">
             <nav>
-                <div class="logo">Milimo Siabana</div>
+                <div class="logo">Milimo Siabana's</div>
                 <div class="menu-toggle">☰</div>
                 <ul class="nav-links">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#summary">About Me</a></li>
-                    <li><a href="#biography">Biography</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                    <li><a href="#scholarships">Scholarships</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                           
+                    <li><a href="#home" class="active" onclick="showPage('home')">HOME</a></li>
+                    <li><a href="#services" onclick="showPage('home')">MY SERVICES</a></li>
+                    <li><a href="#contact" onclick="showPage('contact')">CONTACT ME</a></li>
+                    <li><a href="#join-team" onclick="showPage('join-team')">JOIN MY TEAM</a></li>
+                    <li><a href="#scholarships" onclick="showPage('scholarships')">SCHOLARSHIP OPPORTUNITIES</a></li>
+                    <li><a href="#about" onclick="showPage('about')">ABOUT ME</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="profile-img">
-                <img src="profile-img.jpg" alt="Milimo Siabana">
-            </div>
-            <h1>Milimo Siabana</h1>
-            <p>A Level Graduate 25' | High-achieving Scholar | STEM Enthusiast | Data Analytics Certified</p>
-            <div class="hero-badges">
-                <div class="badge"><i class="fas fa-award"></i> Trident College Solewezi Dux Scholar 25'</div>
-                <div class="badge"><i class="fas fa-trophy"></i> 2023 Senior National Math Olympiad Winner</div>
-                <div class="badge"><i class="fas fa-certificate"></i> SESTUZ Scholarship Recipient</div>
-                <div class="badge"><i class="fas fa-certificate"></i> FQML Scholarship Recipient</div>
-                <div class="badge"><i class="fas fa-chart-line"></i> Data Analytics Certified</div>
-            </div>
-            <a href="#contact" class="btn" style="margin-top: 30px;">Get In Touch</a>
-        </div>
-    </section>
-
-    <!-- Professional Summary -->
-    <section id="summary" class="summary">
-        <div class="container">
-            <h2>Professional Summary</h2>
-            <div class="summary-content">
-                <p>A high-achieving and adaptable student with a proven ability to apply advanced analytical skills, strategic thinking, and clear communication to diverse challenges. Combines award-winning problem-solving prowess with hands-on technical proficiency and a talent for mentoring and collaboration.</p>
-                <p>A reliable and results-oriented individual, certified in Data Analytics and Business Process Management, committed to delivering excellence in any environment.</p>
-                <div style="margin-top: 30px;">
-                    <a href="#education" class="btn">View My Education</a>
-                    <a href="#experience" class="btn btn-outline" style="margin-left: 15px;">See My Experience</a>
+    <!-- Home Page -->
+    <section id="home" class="page-section active">
+        <!-- Hero Section with Sliding Background -->
+        <div class="hero">
+            <div class="hero-background">
+                <div class="background-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="background-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2Nob2xhcnNoaXB8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="background-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="background-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');"></div>
+                <div class="background-slide video-bg">
+                    <video autoplay muted loop>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-group-of-students-studying-in-a-library-34875-large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="background-slide video-bg">
+                    <video autoplay muted loop>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-students-walking-through-university-campus-34900-large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Biography Section -->
-    <section id="biography" class="biography">
-        <div class="container">
-            <h2>My Biography</h2>
-            <p class="section-intro">Learn more about my journey, passions, and aspirations in the field of Finance and business, engineering, and STEM education.</p>
-            <div class="biography-content">
-                <div class="biography-image">
-                    <img src="MS_00.jpg" alt="Milimo Studying">
+            
+            <div class="hero-content">
+                <h1>Milimo Siabana's</h1>
+                <p>Connecting Zambian Students to Education, Careers, and Opportunities</p>
+                <div class="hero-badges">
+                    <div class="badge"><i class="fas fa-graduation-cap"></i> University Applications</div>
+                    <div class="badge"><i class="fas fa-scholarship"></i> Scholarship Guidance</div>
+                    <div class="badge"><i class="fas fa-briefcase"></i> Work Placements</div>
+                    <div class="badge"><i class="fas fa-rocket"></i> Freelancing Opportunities</div>
+                    <div class="badge"><i class="fas fa-chalkboard-teacher"></i> Private Tutoring</div>
+                    <div class="badge"><i class="fas fa-bullhorn"></i> Advertising Services</div>
                 </div>
-                <div class="biography-text">
-                    <h3>Early Life</h3>
-                    <p>My name is Milimo Siabana. I was born on July 11, 2003, in Maakula Village, Sinazongwe District, in Zambia's Southern Province. My childhood was shaped by the rhythms of rural life: the vastness of Lake Kariba, the responsibility of tending cattle, and the creativity born from necessity.</p>
-                    
-                    <p>My early years were spent fishing for bream with friends, farming, and looking after our cattle. These weren't just pastimes; they were a means of subsistence. I learned the value of perseverance on days when the fish weren't biting, and the importance of resourcefulness by selling my catch to buy clothes and support my grandmother, who raised me. From molding animals out of clay and crafting wire vehicles, I developed a hands-on creativity that would later become the foundation for my passion in STEM.</p>
-                    
-                    <p>Life was not without its challenges or dangers. I recall a harrowing moment when my brothers and I were nearly attacked by crocodiles while playing near Lake Kariba. I walked barefoot for most of my youth, mending worn-out flip-flops because my family's limited income was prioritized for food. Yet, these experiences didn't harden me; they taught me resilience, ingenuity, and a deep appreciation for every opportunity.</p>
-                    
-                    <div class="early-life-images">
-                        <div class="early-life-image">
-                            <img src="ME&Ox.png" alt="Village Life">
-                            <div class="image-caption">Maakula Village, Sinazongwe District</div>
-                        </div>
-                        <div class="early-life-image">
-                            <img src="fishing.jpg" alt="Lake Kariba">
-                            <div class="image-caption">Lake Kariba - where I spent my early years fishing</div>
-                        </div>
-                    </div>
-                    
-                    <h3>The Reluctant Scholar: A Spark Ignited</h3>
-                    <p>I enrolled in Grade 1 at Sinanjola Basic School in 2012, two years later than most, due to our financial constraints. Initially, my heart was still at the lake, and I frequently dodged school for the first two terms. Astonishingly, despite my absences, I still managed to finish second in my class. My teacher, Mrs. Manyanina Chimpati, showed immense patience. A pivotal moment came when she used my name as an example on the board, helping me overcome my confusion with letters - I used to write <strong>W</strong> instead of <strong>M</strong> when writing my first name '<strong> Milimo</strong>'. Another turning point was scoring 2/10 on a math exercise. That jolted me into action. In Term 3, I committed fully to my studies, never missed a lesson, and finished the year as the top student. The motivation of receiving GRZ books and pencils for the top 3 students fueled my competitive spirit, and I fiercely maintained my top position throughout primary school.</p>
-                    
-                    <p>My academic journey was marked by early competitions and painful lessons. In Grade 2, I failed to advance in a spelling bee after misspelling <strong>"trousers"</strong>, a disappointment that stung deeply as it meant missing a trip to some new places. However, I also discovered a love for science and mathematics. In Grade 6, a dedicated teacher, Mr. Phiri, introduced me to the concept of national technical schools like Hillcrest. He lit a fire in me, telling me that scoring above 800 in my Grade 7 exams could be my ticket. From that moment, my momentum shifted irrevocably.</p>
-                    
-                    <h3>The Rise of a STEM Mind</h3>
-                     <!-- SESTUZ Scholarship Video Section -->
-   <div class="scholarship-video">
-    <h3>Holding Fire In Laboratory with Mr. Mhango</h3>
-    <p>Fire burns but to a scientist, it's friendly. Watch this slow motion video of me playing with it. This was in 2025 at Trident</p>
-    
-    <div class="video-container">
-        <iframe 
-            src="STEM.mp4" 
-            title="A STEM MIND" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
-    </div>
-                    <p>I thrived in leadership roles, serving as Prefect in charge of the Production Unit, where I managed the school garden with pride. My passion for academics found an outlet in competitions. I represented my school in SOSTAZ, presenting on Zambian national symbols and reaching the district level. But it was the JETS (Junior Engineers, Technicians, and Scientists) competitions that truly changed my trajectory.</p>
-                    
-                    <p>I participated in Mathematics Olympiads and quizzes, succeeding all the way to the National JETS Fair in Kitwe. This was my first time traveling outside my province, and though I didn't win, the exposure was transformative. It connected my innate curiosity to the real-world possibilities of STEM. This drive culminated in a Grade 7 score of <strong>821 out of 900</strong>—a testament to my relentless effort.</p>
-                    
-                    <h3>Overcoming Barriers: Forging My Own Path</h3>
-                    <p>Despite my achievements, financial barriers remained daunting. I was initially selected for Zimba Secondary School but couldn't attend due to the costs. Undeterred, I took initiative. I requested a piece of land from my grandmother, grew cotton, and raised the money to pay for my Grade 8 fees. I even volunteered to water the school garden during holidays to cover my tuition. My resourcefulness extended to my studies; I devoured books from the school library and borrowed from teachers.</p>
-                    
-                    <p>My perseverance paid off. In Grade 9, I made history at Sinanjola Basic School by scoring <strong>534 marks out of 600</strong>, shattering the previous record. This achievement earned me a place at Edgar Chagwa Lungu National STEM School. While financial constraints once again threatened to block my path, providence intervened. I was sponsored by SESTUZ to attend the prestigious <strong>Hillcrest National STEM Secondary School</strong> for my Grades 10-12.</p>
-                    
-                    <div class="early-life-images">
-                        <div class="early-life-image">
-                            <img src="sinanjola-school.jpg" alt="Sinanjola Basic School">
-                            <div class="image-caption">Sinanjola Basic School - where my academic journey began</div>
-                        </div>
-                        <div class="early-life-image">
-                            <img src="jets-competition.jpg" alt="JETS Competition">
-                            <div class="image-caption">Participating in JETS competitions</div>
-                        </div>
-                    </div>
-                    
-                    <h3>Excelling on a National Stage</h3>
-                    <p>At Hillcrest, I seized every opportunity. I consistently received the Best Student award from Grades 10 to 12 and served with passion as the Olympiad and Quiz Coordinator. In my final year, I was honored to be selected as <strong>Head Boy</strong>, leading our cohort to achieve over 100 six-point scores at Grade 12.</p>
-                    
-                    <p>My competitive drive continued. I progressed through district and provincial levels in mathematics competitions, and in 2023, I achieved a crowning glory: <strong>I won the National Senior Mathematics Olympiad</strong> in Lusaka. I graduated from Grade 12 with a perfect score of <strong>six points, with 1s in all eight subjects</strong> I took.</p>
-                    
-                    <p>My academic journey continued to soar when I was awarded an A-Level scholarship by First Quantum Minerals Limited to study at Trident College in Solwezi. There, I continued to excel, serving as Head of House, participating in community service, and winning numerous awards. I graduated in 2025 as the <strong>Dux Scholar of the Class of 2025</strong>, with an impressive average of <strong>94.13%</strong>, and top marks in Further Mathematics (97%) and Chemistry (94%).</p>
-                    
-                    <p>From a barefoot boy fishing in Lake Kariba to a national scholar, my early life has been a testament to the power of resilience, resourcefulness, and an unwavering belief in the power of education.</p>
-                </div>
+                <a href="#services" class="btn" style="margin-top: 30px;">Find Out More</a>
             </div>
         </div>
+
+        <!-- Quick Links Section -->
+        <section class="quick-links">
+            <div class="container">
+                <h2 style="color: white;">Quick Access</h2>
+                <div class="quick-links-container">
+                    <a href="#scholarships" class="quick-link" onclick="showPage('scholarships')">
+                        <i class="fas fa-scholarship"></i> Scholarship Opportunities
+                    </a>
+                    <a href="#tutoring" class="quick-link" onclick="showPage('tutoring')">
+                        <i class="fas fa-chalkboard-teacher"></i> Private Tutoring Services
+                    </a>
+                    <a href="#advertising" class="quick-link" onclick="showPage('advertising')">
+                        <i class="fas fa-bullhorn"></i> Advertising Services
+                    </a>
+                    <a href="#signup" class="quick-link" onclick="showPage('signup')">
+                        <i class="fas fa-user-plus"></i> Sign Up Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milimo Siabana's Acronym Section -->
+        <section class="ms-connect-section">
+            <div class="container">
+                <div class="acronym-container">
+                    <h2 class="acronym-title">Milimo Siabana's</h2>
+                    <div class="acronym-grid">
+                        <div class="acronym-item">
+                            <span class="acronym-letter">M</span>
+                            <span class="acronym-meaning">Milimo Siabana's</span>
+                        </div>
+                        <div class="acronym-item">
+                            <span class="acronym-letter">S</span>
+                            <span class="acronym-meaning">Scholarship &</span>
+                        </div>
+                        <div class="acronym-item">
+                            <span class="acronym-letter">C</span>
+                            <span class="acronym-meaning">Career Opportunities &</span>
+                        </div>
+                        <div class="acronym-item">
+                            <span class="acronym-letter">O</span>
+                            <span class="acronym-meaning">Opportunities for</span>
+                        </div>
+                        <div class="acronym-item">
+                            <span class="acronym-letter">N</span>
+                            <span class="acronym-meaning">Nurturing</span>
+                        </div>
+                        <div class="acronym-item">
+                            <span class="acronym-letter">E</span>
+                            <span class="acronym-meaning">Educational</span>
+                        </div>
+                        <div class="acronym-item">
+                            <span class="acronym-letter">C</span>
+                            <span class="acronym-meaning">Career</span>
+                        </div>
+                        <div class="acronym-item">
+                            <span class="acronym-letter">T</span>
+                            <span class="acronym-meaning">Trajectories</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.2rem; opacity: 0.9;">Building bridges to brighter futures for Zambian students</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="container" style="padding: 80px 0;">
+            <h2>My Services</h2>
+            <p class="section-intro">Discover how I can help you achieve your educational and career goals</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="MS_00.jpg" alt="My Story" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>My Story</h3>
+                    <p>Learn about my inspiring journey from rural Zambia to academic excellence</p>
+                    <button class="btn" onclick="showPage('milimo-story')" style="margin-top: 20px;">Explore My Story</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN0dWRlbnQlMjBzY2hvbGFyc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="About Me" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>About Me</h3>
+                    <p>Learn about my mentorship program and the services I offer to Zambian students</p>
+                    <button class="btn" onclick="showPage('about')" style="margin-top: 20px;">Learn More</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0dWRlbnQlMjBzY2hvbGFyc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Scholarship Opportunities" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-scholarship"></i>
+                    </div>
+                    <h3>Scholarship Opportunities</h3>
+                    <p>Find local and international scholarship opportunities for Zambian students</p>
+                    <button class="btn" onclick="showPage('scholarships')" style="margin-top: 20px;">Find Scholarships</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5dGljc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Updates & News" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Updates & News</h3>
+                    <p>Stay updated with my latest activities, success stories, and opportunities</p>
+                    <button class="btn" onclick="showPage('updates')" style="margin-top: 20px;">View Updates</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW50cmVwcmVuZXVyc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Entrepreneurship" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Entrepreneurship</h3>
+                    <p>Explore business and entrepreneurship opportunities for Zambian youth</p>
+                    <button class="btn" onclick="showPage('entrepreneurship')" style="margin-top: 20px;">Explore Opportunities</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="University Applications" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>University Applications</h3>
+                    <p>Guidance for applying to universities in Zambia and internationally</p>
+                    <button class="btn" onclick="showPage('university-apps')" style="margin-top: 20px;">Apply Now</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGF3YXJkJTIwY2VyZW1vbnl8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Success Stories" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Success Stories</h3>
+                    <p>Read testimonials from students I've helped achieve their dreams</p>
+                    <button class="btn" onclick="showPage('success-stories')" style="margin-top: 20px;">View Stories</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1551836026-d5c88ac5c4c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dm9sdW50ZWVyaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Join My Team" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Join My Team</h3>
+                    <p>Become a mentor or volunteer with me to help Zambian students</p>
+                    <button class="btn" onclick="showPage('join-team')" style="margin-top: 20px;">Get Involved</button>
+                </div>
+                
+                <!-- NEW: Private Tutoring Service -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHV0b3Jpbmd8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Private Tutoring" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Private Tutoring</h3>
+                    <p>Expert tutoring in Mathematics, Chemistry, Physics and Biology for Grades 1-12 and A Levels</p>
+                    <button class="btn" onclick="showPage('tutoring')" style="margin-top: 20px;">Learn More</button>
+                </div>
+                
+                <!-- NEW: Advertising Service -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWR2ZXJ0aXNpbmd8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Advertising Services" class="service-image">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Advertising Services</h3>
+                    <p>Professional advertising and marketing solutions for businesses and organizations</p>
+                    <button class="btn" onclick="showPage('advertising')" style="margin-top: 20px;">Learn More</button>
+                </div>
+            </div>
+        </section>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- NEW: Private Tutoring Page -->
+    <section id="tutoring" class="page-section">
         <div class="container">
-            <h2>Education & Qualifications</h2>
-            <p class="section-intro">Below is my education history starting with the most recent one. I list all my achievements, and the activities I was involved in while attending these institutions. 
-                                     Click on each education card to view detailed achievements and qualifications</p>
-            <div class="education-grid">
-                <!-- Trident College -->
-                <div class="education-card" data-education="trident">
-                    <div class="education-image">
-                        <img src="trident-college.jpg" alt="Trident College">
-                        <div class="education-overlay">
-                            <span class="btn">Click to see more</span>
-                        </div>
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>Private Tutoring Services</h2>
+                <p>Expert one-on-one tutoring in Mathematics, Chemistry, Physics and Biology for students from Grade 1 to 12, including Cambridge A Levels.</p>
+                
+                <div class="media-gallery">
+                    <div class="media-item">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHV0b3Jpbmd8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Math Tutoring">
+                        <div class="media-caption">Mathematics Tutoring</div>
                     </div>
-                    <div class="education-info">
-                        <div class="education-date">2024 - 2025</div>
-                        <h3>Trident College Solwezi</h3>
-                        <p class="education-level">Cambridge International A Levels</p>
-                        <p>Dux Scholar • SERVICE AWARD with HONOURS • 4 A Levels, 1 AS Level • Head of Kansanshi Junior Boys Boarding house</p>
+                    <div class="media-item">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpZW5jZSUyMHR1dG9yaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Science Tutoring">
+                        <div class="media-caption">Science Subjects</div>
                     </div>
-                </div>
-
-                <!-- Hillcrest -->
-                <div class="education-card" data-education="hillcrest">
-                    <div class="education-image">
-                        <img src="Hillcrest.jpg" alt="Hillcrest Technical School">
-                        <div class="education-overlay">
-                            <span class="btn">Click to See more</span>
-                        </div>
-                    </div>
-                    <div class="education-info">
-                        <div class="education-date">2021 - 2023</div>
-                        <h3>Hillcrest Boys National STEM Secondary School</h3>
-                        <p class="education-level">Senior Secondary Education, Grade 10 - 12.</p>
-                        <p>HEAD BOY • 8 Distinctions • National Math Olympiad Winner</p>
+                    <div class="media-item">
+                        <video controls>
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-teacher-explaining-geometry-to-a-student-39755-large.mp4" type="video/mp4">
+                        </video>
+                        <div class="media-caption">Interactive Learning</div>
                     </div>
                 </div>
-
-                <!-- Sinanjola Basic -->
-                <div class="education-card" data-education="sinanjola-basic">
-                    <div class="education-image">
-                        <img src="Sinanjola.jpg" alt="Sinanjola Basic School">
-                        <div class="education-overlay">
-                            <span class="btn">View Details</span>
-                        </div>
-                    </div>
-                    <div class="education-info">
-                        <div class="education-date">2019 - 2020</div>
-                        <h3>Sinanjola Basic School</h3>
-                        <p class="education-level">Junior Secondary School</p>
-                        <p>Junior Secondary Certificate • Scored 534 • Grade 8 - 9</p>
-                    </div>
+                
+                <h3>My Tutoring Approach</h3>
+                <p>I provide personalized tutoring sessions tailored to each student's learning style and academic needs. I am an experienced educator with strong academic background in my respective subjects.</p>
+                
+                <h3>Subjects I Cover</h3>
+                <div class="button-grid">
+                    <button class="section-btn">
+                        <i class="fas fa-square-root-alt"></i><br>Mathematics
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-flask"></i><br>Chemistry
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-atom"></i><br>Physics
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-dna"></i><br>Biology
+                    </button>
                 </div>
-
-                <!-- Sinanjola Primary -->
-                <div class="education-card" data-education="sinanjola-primary">
-                    <div class="education-image">
-                        <img src="Sinanjola.jpg" alt="Sinanjola Basic School">
-                        <div class="education-overlay">
-                            <span class="btn">Click to see more</span>
+                
+                <h3>Grade Levels</h3>
+                <ul>
+                    <li><strong>Primary School:</strong> Grades 1-7</li>
+                    <li><strong>Junior Secondary:</strong> Grades 8-9</li>
+                    <li><strong>Senior Secondary:</strong> Grades 10-12</li>
+                    <li><strong>A Levels:</strong> Cambridge and other curricula</li>
+                </ul>
+                
+                <h3>Sign Up for Tutoring</h3>
+                <div class="tutoring-form">
+                    <form id="tutoringForm" onsubmit="sendTutoringRequest(event)">
+                        <div class="form-group">
+                            <label for="student-name">Student Name</label>
+                            <input type="text" id="student-name" name="student-name" required>
                         </div>
-                    </div>
-                    <div class="education-info">
-                        <div class="education-date">2012 - 2018</div>
-                        <h3>Sinanjola Basic School</h3>
-                        <p class="education-level">Primary Education</p>
-                        <p>Grade 7 Certificate • 831 Marks • Grade 1 to 7</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SESTUZ Scholarship Video Section -->
-<div class="scholarship-video">
-    <h3>SESTUZ Scholarship Journey</h3>
-    <p>The Secondary School Teachers Union of Zambia (SESTUZ) played a pivotal role in my educational journey by sponsoring my studies at Hillcrest National STEM Secondary School. Watch this video to learn more about SESTUZ's scholarship program and its impact on students like me:</p>
-    
-    <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/D3BvmYczTdU?rel=0&modestbranding=1" 
-            title="SESTUZ Scholarship Program" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
-    </div>
-    
-    <p class="video-caption">SESTUZ Scholarship Program - Supporting Zambian Students in STEM Education</p>
-    
-    <p>This scholarship was instrumental in my academic development, allowing me to focus on my studies without financial constraints and providing me with the resources needed to excel in STEM subjects. I am eternally grateful to SESTUZ for their support and belief in my potential.</p>
-    
-    <!-- Alternative link in case the embed doesn't work -->
-    <div style="text-align: center; margin-top: 20px;">
-        <p><strong>If the video doesn't play, you can watch it directly on YouTube:</strong></p>
-        <a href="https://www.youtube.com/watch?v=D3BvmYczTdU" target="_blank" class="btn" style="margin-top: 10px;">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-        </a>
-    </div>
-</div>
-    </section>
-
-    <!-- Education Details Modals -->
-    <!-- Trident College Modal -->
-    <div class="education-modal" id="trident-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Trident College Solwezi</h3>
-                <p>Cambridge International A Levels (2024 - 2025)</p>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="education-achievements">
-                    <h4>Achievements & Qualifications</h4>
-                    <ul>
-                        <li><strong>Subjects:</strong> Further Math, Math, Physics, Chemistry, Biology</li>
-                        <li><strong>A Level Results:</strong> Mathematics (<strong>A</strong>), Further Mathematics (<STRONG>pending</STRONG>), Physics (<STRONG>pending</STRONG>), Chemistry (<STRONG>pending</STRONG>)</li>
-                        <li><strong>AS Level Results:</strong> Further Mathematics (<strong>a</strong>), Mathematics (<strong>a</strong>), Physics (<strong>a</strong>), Chemistry(<strong>a</strong>), Biology (<strong>a</strong>) </li>
-                        <li><strong>Awards:</strong> <li>Dux Scholar 25'</li> <li>SERVICE AWARD with HONOURS</li> <li>Highest score in Key stage 5 UCT Online Math Olympiad</li> <li>Other Cycle Award Certifications</li>  </li>
-                        <li><strong>Certifications & Endorsements:</strong> Introduction to BUSINESS (Saylor Academy), Data Analytics with Excel (Great Learning Academy),  Communication, Health and Safety management, Business Process Management Basics</li>
-                        <li><strong>Activities & Socities:</strong> <Li> STEM CLUB President</Li> <li> Cheshire Homes</li> <li>Academic Mentor</li> <li> Head of Kansanshi, a Junior Boys Boarding House</li> </li>
                         
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hillcrest Modal -->
-    <div class="education-modal" id="hillcrest-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Hillcrest Boys National STEM Secondary School</h3>
-                <p>Senior Secondary Education (2021 - 2023)</p>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="education-achievements">
-                    <h4>Achievements & Qualifications</h4>
-                    <ul>
-                        <li><strong>School Certificate:</strong> 1st distinctions in all 8 subjects: Math, English, Chemistry, Physics, Biology, Additional Math, Geography, Civic Education</li>
-                        <li><strong>Leadership:</strong> <li>HEAD BOY 2023</li> <LI>JETS CLUB Olympiads and Quz Coordinator 2021 - 2023</LI> <li>Hillcrest PCM Librarian</li> <li>Prophecy Band Coordinator</li> <li>AYM Leader</li>
-
-                        </li>
-                        <li><strong>Achievements:</strong> <LI>Overall Best Grade 12 Pupil</LI> <LI>Best G12 student in Physics, Chemistry and Geography</LI> <li>Overall best grade 10 and 11 student</li>  </li>
-                        <li><strong>National Recognition:</strong> <li>2023 Senior National Mathematics Olympiads Champion</li> <li>Participated in the Inaugural STEM BOOT CAMP</li>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sinanjola Basic Modal -->
-    <div class="education-modal" id="sinanjola-basic-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Sinanjola Basic School</h3>
-                <p>Junior Secondary School (2019 - 2020)</p>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="education-achievements">
-                    <h4>Achievements & Qualifications</h4>
-                    <ul>
-                        <li>Junior Secondary Leaving School Certificate</li>
-                        <li>Strong foundation in core subjects leading to STEM specialization</li>
-                        <li>Development of critical thinking and problem-solving skills</li>
-                        <li>Participation in science fairs and mathematics competitions and JETS</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sinanjola Primary Modal -->
-    <div class="education-modal" id="sinanjola-primary-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Sinanjola Basic School</h3>
-                <p>Primary Education (2012 - 2018)</p>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="education-achievements">
-                    <h4>Achievements & Qualifications</h4>
-                    <ul>
-                        <li>Grade 7 ECZ Certificate</li>
-                        <li>Scored 821 marks - demonstrating early academic excellence</li>
-                        <li>Foundation for mathematical and scientific aptitude</li>
-                        <li>Active participation in school clubs and extracurricular activities</li>
-                         <li><strong>Primary Mathematics National Olympiads Certificate of participation</strong></li>
-                         <li><strong>1st Prize in SOUTHERN 'B' Regional Primary Mathematics Olympiads</strong></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Work Experience & Leadership</h2>
-            <p class="section-intro">My professional journey in tutoring, leadership, and practical engineering experience</p>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3><i class="fas fa-chalkboard-teacher"></i> IGCSE & A Level Tutor & Mentor</h3>
-                    <div class="experience-date">May to October 2025</div>
-                    <p>Provided tutoring in IGCSE Mathematics and served as Further Mathematics and Physics A Level Mentor at Trident College Solwezi.</p>
-                </div>
-                <div class="experience-card">
-                    <h3><i class="fas fa-atom"></i> President of STEM Club</h3>
-                    <div class="experience-date">January to November 2025</div>
-                    <p>Led the STEM Club at Trident College, preparing students for Olympiads in Mathematics, Physics, Chemistry & Biology, and coaching students in research methodology.</p>
-                </div>
-                <div class="experience-card">
-                    <h3><i class="fas fa-gavel"></i> National JETS Fair Adjudicator</h3>
-                   <div class="experience-date">11th – 15th August 2025</div>
-                    <p>Senior Mathematics Innovations Adjudicator at National Science Centre, evaluating student mathematical innovations and helping refine ideas.</p>
-                </div>
-                <div class="experience-card">
-                    <h3><i class="fas fa-hard-hat"></i> Mining Engineering Work Placement</h3>
-                    <div class="experience-date">19th – 29th November 2024</div>
-                    <p>Worked with mining engineers at KANSANSHI Mining Plc on drill patterns, blast timing designs, and acquired skills in Geovia Surpac, SHOT Plus and Dezwik software.</p>
-                </div>
-                <div class="experience-card">
-                    <h3><i class="fas fa-hands-helping"></i> Community Service Tutor</h3>
-                    <div class="experience-date">2024 to 2025</div>
-                    <p>Tutored children with disabilities in Mathematics at Cheshire Homes Solwezi, helping them improve their exam performance.</p>
-                </div>
-                <div class="experience-card">
-                    <h3><i class="fas fa-user-graduate"></i> Head Boy</h3>
-                    <div class="experience-date">October 2022 to November 2023</div>
-                    <p>Served as Head Boy at Hillcrest Boys National STEM Secondary School, addressing conflicts, organizing events, and developing leadership skills.</p>
+                        <div class="form-group">
+                            <label for="parent-name">Parent/Guardian Name</label>
+                            <input type="text" id="parent-name" name="parent-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tutoring-email">Email Address</label>
+                            <input type="email" id="tutoring-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tutoring-phone">Phone Number</label>
+                            <input type="tel" id="tutoring-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="grade-level">Grade/Level</label>
+                            <select id="grade-level" name="grade-level" required>
+                                <option value="">Select grade/level</option>
+                                <option value="grade1-7">Grades 1-7</option>
+                                <option value="grade8-9">Grades 8-9</option>
+                                <option value="grade10-12">Grades 10-12</option>
+                                <option value="a-levels">A Levels</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjects">Subjects Needed</label>
+                            <select id="subjects" name="subjects" required multiple>
+                                <option value="mathematics">Mathematics</option>
+                                <option value="chemistry">Chemistry</option>
+                                <option value="physics">Physics</option>
+                                <option value="biology">Biology</option>
+                            </select>
+                            <small>Hold Ctrl/Cmd to select multiple subjects</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tutoring-message">Additional Information (Learning goals, specific challenges, preferred schedule, etc.)</label>
+                            <textarea id="tutoring-message" name="message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Request Tutoring</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- NEW: Advertising Services Page -->
+    <section id="advertising" class="page-section">
         <div class="container">
-            <h2>Skills & Competencies</h2>
-            <p class="section-intro">A comprehensive overview of my technical, leadership, and personal skills</p>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> Languages & Communication</h3>
-                    <ul class="skill-items">
-                        <li>Fluent in English and Tonga</li>
-                        <li>Average proficiency in Nyanja</li>
-                        <li>Excellent writing and oral communication skills</li>
-                        <li>Certificate in Communication</li>
-                    </ul>
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>Advertising Services</h2>
+                <p>Professional advertising and marketing solutions to help businesses and organizations reach their target audience effectively.</p>
+                
+                <div class="media-gallery">
+                    <div class="media-item">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWR2ZXJ0aXNpbmd8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Digital Advertising">
+                        <div class="media-caption">Digital Advertising</div>
+                    </div>
+                    <div class="media-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFya2V0aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Marketing Strategy">
+                        <div class="media-caption">Marketing Strategy</div>
+                    </div>
+                    <div class="media-item">
+                        <video controls>
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-business-team-discussing-a-graph-39757-large.mp4" type="video/mp4">
+                        </video>
+                        <div class="media-caption">Strategic Planning</div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Leadership & Management</h3>
-                    <ul class="skill-items">
-                        <li>Leadership and teamwork</li>
-                        <li>Time management and organizational skills</li>
-                        <li>Facilitation and coordination</li>
-                        <li>Public speaking and conflict resolution</li>
-                    </ul>
+                
+                <h3>My Advertising Solutions</h3>
+                <p>I offer comprehensive advertising services tailored to your business needs, from digital marketing campaigns to traditional advertising methods.</p>
+                
+                <h3>Services I Offer</h3>
+                <div class="button-grid">
+                    <button class="section-btn">
+                        <i class="fas fa-desktop"></i><br>Digital Marketing
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-mobile-alt"></i><br>Social Media Advertising
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-search"></i><br>SEO & Content Marketing
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-print"></i><br>Print & Traditional Media
+                    </button>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
-                    <ul class="skill-items">
-                        <li>ICT proficient (MS Suite, Google Suite)</li>
-                        <li>Data Analytics with Excel (Certified)</li>
-                        <li>Des Wik, Surpac & SHOT Plus software basics</li>
-                        <li>Research and analytical skills</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-star"></i> Personal Attributes</h3>
-                    <ul class="skill-items">
-                        <li>Creative and collaborative</li>
-                        <li>Reliable, honest and trustworthy</li>
-                        <li>Assertive and hard-working</li>
-                        <li>Outstanding interpersonal skills</li>
-                        <li>Good communicator and go-getter</li>
-                    </ul>
+                
+                <h3>Request Advertising Services</h3>
+                <div class="contact-form">
+                    <form id="advertisingForm" onsubmit="sendAdvertisingRequest(event)">
+                        <div class="form-group">
+                            <label for="business-name">Business/Organization Name</label>
+                            <input type="text" id="business-name" name="business-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-person">Contact Person</label>
+                            <input type="text" id="contact-person" name="contact-person" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="advertising-email">Email Address</label>
+                            <input type="email" id="advertising-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="advertising-phone">Phone Number</label>
+                            <input type="tel" id="advertising-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service-type">Type of Service Needed</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Select service type</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="social-media">Social Media Advertising</option>
+                                <option value="seo">SEO & Content Marketing</option>
+                                <option value="traditional">Print & Traditional Media</option>
+                                <option value="comprehensive">Comprehensive Campaign</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Advertising Budget (USD)</label>
+                            <input type="number" id="budget" name="budget" min="100">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="advertising-message">Tell us about your advertising needs and goals</label>
+                            <textarea id="advertising-message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Request Advertising Services</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
+    <!-- NEW: Sign Up Page -->
+    <section id="signup" class="page-section">
         <div class="container">
-            <h2>Achievements & Awards</h2>
-            <p class="section-intro">Recognition of my academic excellence and contributions to STEM education</p>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-year">2025</div>
-                    <div class="achievement-icon">🏆</div>
-                    <h3>Dux Scholar Award</h3>
-                    <p>Received the Dux Scholar Award and SERVICE AWARD with HONOURS at Trident College</p>
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>Sign Up for My Services</h2>
+                <p>Register for my tutoring services, advertising solutions, or scholarship guidance. I'll connect with you to discuss your specific needs.</p>
+                
+                <div class="contact-form">
+                    <form id="signupForm" onsubmit="sendSignupRequest(event)">
+                        <div class="form-group">
+                            <label for="signup-name">Full Name</label>
+                            <input type="text" id="signup-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-email">Email Address</label>
+                            <input type="email" id="signup-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-phone">Phone Number</label>
+                            <input type="tel" id="signup-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service-interest">Service of Interest</label>
+                            <select id="service-interest" name="service-interest" required>
+                                <option value="">Select service</option>
+                                <option value="tutoring">Private Tutoring</option>
+                                <option value="advertising">Advertising Services</option>
+                                <option value="scholarship">Scholarship Guidance</option>
+                                <option value="university">University Applications</option>
+                                <option value="mentorship">Mentorship Program</option>
+                                <option value="multiple">Multiple Services</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-message">Tell me about your specific needs and how I can help</label>
+                            <textarea id="signup-message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Sign Up Now</button>
+                    </form>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-year">2024</div>
-                    <div class="achievement-icon">🎖️</div>
-                    <h3>Full Colours in Academics</h3>
-                    <p>Awarded with Full Colours in Academics at Trident College and highest mark in UCT Mathematics Olympiads</p>
-                </div>
-               <div class="achievement-card">
-                    <div class="achievement-year">2023</div>
-                    <div class="achievement-icon">🥇</div>
-                    <h3>National Math Olympiad Winner</h3>
-                    <p>Won 1st Prize in National Senior Mathematics Olympiads and awarded Overall Best Grade 12 Pupil at Hillcrest</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-year">2021-2023</div>
-                    <div class="achievement-icon">⭐</div>
-                    <h3>Academic Excellence</h3>
-                    <p>Awarded as overall best grade 10,11 and 12 student in consecutive years at Hillcrest</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-year">2018</div>
-                    <div class="achievement-icon">🔬</div>
-                    <h3>JETS Fair Recognition</h3>
-                    <p>Certificate of participation at National JETS Fair and 1st prize in Primary Mathematics Olympiads</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-year">STEM</div>
-                    <div class="achievement-icon">💡</div>
-                    <h3>STEM Boot Camp</h3>
-                    <p>Contributed to development of mathematics innovations during 2023 Inaugural STEM Boot Camp</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Updates Section -->
-    <section id="updates" class="updates">
-        <div class="container">
-            <h2>Current Projects & Updates</h2>
-            <p class="section-intro">What I'm currently working on and recent developments in my academic journey</p>
-            <div class="updates-grid">
-                <div class="update-card">
-                    <div class="update-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5dGljc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Data Analytics">
-                    </div>
-                    <div class="update-content">
-                        <div class="update-date">Ongoing</div>
-                        <h3>Advanced Data Analytics with Excel</h3>
-                        <p>Working on a comprehensive data analysis project using Excel and exploring Python for more advanced analytics applications.</p>
-                    </div>
-                </div>
-                <div class="update-card">
-                    <div class="update-image">
-                        <img src="Tutions.png" alt="Tutoring">
-                    </div>
-                    <div class="update-content">
-                        <div class="update-date">Current</div>
-                        <h3>Tutoring program</h3>
-                        <p>Developing a structured tutoring program for students focusing on mathematics and science subjects.</p>
-                        <p>Offereing Maths, Physics and Chemistry Tuitions to High school students both Zambian Curriculum and Cambridge IGCSE & A Levels Curricula</p>
-                    </div>
-                </div>
-                <div class="update-card">
-                    <div class="update-image">
-                        <img src="Scholarships.jpg" alt="Scholarship Guide">
-                    </div>
-                    <div class="update-content">
-                        <div class="update-date">Current</div>
-                       <h3>Scholarship & bursaries guide</h3>
-                       <p>Developing a website with comprehensive scholarship opportunities and bursaries for Zambian students pursuing higher education locally and abroad.</p>
-                    </div>
-                </div>
-                <div class="update-card">
-                    <div class="update-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWluaW5nJTIwZW5naW5lZXJpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Mining Engineering">
-                    </div>
-                    <div class="update-content">
-                        <div class="update-date">Ongoing</div>
-                        <h3>University Applications</h3>
-                        <p>Preparing applications for engineering scholarships/bursaries at top universities abroad and in Zambia for the 2025/2026 undergraduate intake.</p>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <h3>Contact Me Directly</h3>
+                    <p>Prefer to contact me directly? Reach out via phone or email:</p>
+                    <div class="button-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <a href="tel:+260976452281" class="btn">
+                            <i class="fas fa-phone"></i> Call: +260 976 452 281
+                        </a>
+                        <a href="mailto:siabanamilimo003@gmail.com" class="btn">
+                            <i class="fas fa-envelope"></i> Email Me
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Scholarships Section -->
-    <section id="scholarships" class="scholarships">
+    <!-- My Story Page -->
+    <section id="milimo-story" class="page-section">
         <div class="container">
-            <h2>Scholarships for Zambian Students</h2>
-            <p class="section-intro">A curated list of scholarship opportunities available for Zambian students pursuing higher education</p>
-            <div class="scholarships-grid">
-                <!-- HELSB -->
-                <div class="scholarship-card">
-                    <div class="scholarship-image">
-                        <img src="helsb.png" alt="HELSB Scholarship">
-                        <div class="scholarship-overlay">
-                            <a href="https://www.helsb.gov.zm/" target="_blank" class="btn">Apply Now</a>
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>My Inspiring Journey</h2>
+                <p>From a small village in Sinazongwe to becoming a national academic champion, my story is a testament to the power of education and resilience.</p>
+                
+                <div class="button-grid">
+                    <button class="section-btn" onclick="showStorySection('early-life')">
+                        <i class="fas fa-child"></i><br>Early Life & Background
+                    </button>
+                    <button class="section-btn" onclick="showStorySection('education')">
+                        <i class="fas fa-graduation-cap"></i><br>Education Journey
+                    </button>
+                    <button class="section-btn" onclick="showStorySection('achievements')">
+                        <i class="fas fa-trophy"></i><br>Achievements & Awards
+                    </button>
+                    <button class="section-btn" onclick="showStorySection('experience')">
+                        <i class="fas fa-briefcase"></i><br>Work Experience
+                    </button>
+                    <button class="section-btn" onclick="showStorySection('skills')">
+                        <i class="fas fa-cogs"></i><br>Skills & Competencies
+                    </button>
+                    <button class="section-btn" onclick="showStorySection('hobbies')">
+                        <i class="fas fa-heart"></i><br>Hobbies & Interests
+                    </button>
+                </div>
+
+                <div id="story-content-display">
+                    <!-- Content will be dynamically loaded here -->
+                    <div style="text-align: center; padding: 50px 0;">
+                        <h3>Select a section to learn more about my journey</h3>
+                        <p>Click on any of the buttons above to explore different aspects of my life and career</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Page -->
+    <section id="about" class="page-section">
+        <div class="container">
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>About Me</h2>
+                <p>I am Milimo Siabana, a mentorship initiative founder helping Zambian students navigate their educational and career paths. My mission is to bridge the gap between ambition and opportunity.</p>
+                
+                <h3>My Vision</h3>
+                <p>To create a Zambia where every student has access to quality education and career opportunities regardless of their background or circumstances.</p>
+                
+                <h3>My Mission</h3>
+                <p>To empower Zambian youth through mentorship, scholarship guidance, university application support, and career development opportunities.</p>
+                
+                <h3>My Services</h3>
+                <div class="button-grid">
+                    <button class="section-btn" onclick="showPage('university-apps')">
+                        <i class="fas fa-university"></i><br>University Applications
+                    </button>
+                    <button class="section-btn" onclick="showPage('scholarships')">
+                        <i class="fas fa-scholarship"></i><br>Scholarship Search
+                    </button>
+                    <button class="section-btn" onclick="showPage('tutoring')">
+                        <i class="fas fa-chalkboard-teacher"></i><br>Private Tutoring
+                    </button>
+                    <button class="section-btn" onclick="showPage('advertising')">
+                        <i class="fas fa-bullhorn"></i><br>Advertising Services
+                    </button>
+                </div>
+
+                <div class="media-gallery">
+                    <div class="media-item">
+                        <img src="MS_00.jpg" alt="Milimo Studying">
+                        <div class="media-caption">Milimo Studying</div>
+                    </div>
+                    <div class="media-item">
+                        <img src="ME&Ox.png" alt="Village Life">
+                        <div class="media-caption">Early Life Experience</div>
+                    </div>
+                    <div class="media-item">
+                        <video controls>
+                            <source src="STEM.mp4" type="video/mp4">
+                        </video>
+                        <div class="media-caption">STEM Activities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Opportunities Page -->
+    <section id="scholarships" class="page-section">
+        <div class="container">
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>Scholarship Opportunities for Zambian Students</h2>
+                <p>Find comprehensive information about local and international scholarship opportunities available to Zambian students.</p>
+                
+                <div class="scholarship-categories">
+                    <div class="category-card">
+                        <div class="category-header">
+                            <i class="fas fa-home category-icon"></i>
+                            <h3>Local Scholarships</h3>
+                        </div>
+                        <h4>Full Scholarships</h4>
+                        <div class="scholarship-links">
+                            <a href="https://www.helsb.gov.zm/" target="_blank" class="scholarship-link">HELSB Government Scholarships</a>
+                            <a href="#corporate-bursaries" class="scholarship-link">Corporate Bursaries</a>
+                            <a href="#university-specific" class="scholarship-link">University-specific Scholarships</a>
+                        </div>
+                        <h4>Partial Scholarships</h4>
+                        <div class="scholarship-links">
+                            <a href="https://www.unza.zm/fees-funding/scholarships-bursaries" target="_blank" class="scholarship-link">Tuition Fee Waivers</a>
+                            <a href="https://www.cbu.ac.zm/admissions/scholarships/" target="_blank" class="scholarship-link">Academic Excellence Awards</a>
+                            <a href="https://www.mu.ac.zm/student-life/sports-scholarships" target="_blank" class="scholarship-link">Sports and Arts Scholarships</a>
                         </div>
                     </div>
-                    <div class="scholarship-card">
-    
-    <div class="scholarship-content">
-        <div class="scholarship-deadline">Application Period: Varies by partner University. See timelines below</div>
-        <h3>Higher Education Loans & Scholarships Board (HELSB)</h3>
-        <p>Government-funded loans and scholarships for Zambian students pursuing higher education at recognized public and private institutions.</p>
-        
-        <div class="scholarship-details">
-            <div class="detail-section">
-                <h4><i class="fas fa-user-check"></i> Eligibility Criteria</h4>
+
+                    <div class="category-card">
+                        <div class="category-header">
+                            <i class="fas fa-globe category-icon"></i>
+                            <h3>International Scholarships</h3>
+                        </div>
+                        <h4>Full Scholarships</h4>
+                        <div class="scholarship-links">
+                            <a href="https://mastercardfdn.org/all/scholarships/" target="_blank" class="scholarship-link">Mastercard Foundation Scholars</a>
+                            <a href="https://www.chevening.org/scholarship/zambia/" target="_blank" class="scholarship-link">Chevening Scholarships</a>
+                            <a href="https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships-for-masters-and-phd-study/" target="_blank" class="scholarship-link">Commonwealth Scholarships</a>
+                            <a href="https://www.turkiyeburslari.gov.tr/" target="_blank" class="scholarship-link">Turkish Government Scholarships</a>
+                            <a href="https://www.kyoto-u.ac.jp/en/education-campus/international/students/scholarships" target="_blank" class="scholarship-link">Kyoto University Scholarships</a>
+                            <a href="https://admissions.miami.edu/undergraduate/financial-aid/scholarships/presidential/index.html" target="_blank" class="scholarship-link">University of Miami Presidential Fellows</a>
+                        </div>
+                        <h4>Partial Scholarships</h4>
+                        <div class="scholarship-links">
+                            <a href="https://www.uct.ac.za/apply/funding/postgraduate/international" target="_blank" class="scholarship-link">University-specific International Awards</a>
+                            <a href="https://www.wits.ac.za/internationalstudents/scholarships/" target="_blank" class="scholarship-link">Research Scholarships</a>
+                            <a href="https://www.studyinaustralia.gov.au/english/australian-universities/scholarships" target="_blank" class="scholarship-link">Exchange Program Scholarships</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Application Requirements</h3>
                 <ul>
-                    <li>Zambian citizen with a valid NRC</li>
-                    <li>Admitted to an accredited higher education institution</li>
-                    <li>Good academic record (Minimum 5 O-level credits)</li>
-                    <li>Not benefiting from any other scholarship</li>
-                    <li>Meets specific program requirements</li>
-                </ul>
-            </div>
-            
-            <div class="detail-section">
-                <h4><i class="fas fa-file-alt"></i> Application Requirements</h4>
-                <ul>
-                    <li>Completed HELSB application form</li>
-                    <li>Certified copy Grade 12 Certificate or statement of results</li>
-                    <li>Birth Certificate (Original & Photocopy)</li>
-                    <li>Certified copy of a valid National Registration Card (NRC)</li>
-                    <li>Admission letter from respective institution</li>
+                    <li>Completed application form</li>
+                    <li>Certified copy of Grade 12 Certificate</li>
+                    <li>Birth Certificate</li>
+                    <li>Valid National Registration Card (NRC)</li>
+                    <li>Admission letter from institution</li>
                     <li>Fee structure from institution</li>
-                    <li>Recent passport-size photographs</li>
-                    <li>Recommendation letters (School/Chief/Headman)</li>
-                    <li>Parent/Guardian income statement</li>
                 </ul>
-            </div>
-            
-            <div class="detail-section">
-                <h4><i class="fas fa-calendar-alt"></i> Accredited Institution Timelines</h4>
-                <div class="timeline-grid">
-                    <div class="timeline-item">
-                        <strong>The University of Zambia</strong>
-                        <span>August - October,</span>
-                        <span>Expected List release date: Novemeber</span>
-                    </div>
-                    <div class="timeline-item">
-                        <strong>Copperbelt University</strong>
-                        <span>May - July</span>
-                    </div>
-                    <div class="timeline-item">
-                        <strong>MUKUBA</strong>
-                        <span>To be updated</span>
-                    </div>
-                    <div class="timeline-item">
-                        <strong>MULUNGUSHI University</strong>
-                        <span>To be updated</span>
-                    </div>
-                </div>
-                <p class="timeline-note">*Dates are approximate - check HELSB website for exact deadlines</p>
-            </div>
-            
-            <div class="detail-section">
-                <h4><i class="fas fa-info-circle"></i> Additional Information</h4>
-                <ul>
-                    <li>Loans are repayable after completion of studies</li>
-                    <li>Scholarships available for specific programs</li>
-                    <li>Bursaries for students from vulnerable backgrounds</li>
-                    <li>Apply online through HELSB portal</li>
-                    <li>Regularly check for updates on their website</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-                <!-- Mastercard Foundation -->
-                <div class="scholarship-card">
-                    <div class="scholarship-image">
-                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN0dWRlbnQlMjBzY2hvbGFyc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Mastercard Foundation Scholarship">
-                        <div class="scholarship-overlay">
-                            <a href="https://mastercardfdn.org/all/scholarships/" target="_blank" class="btn">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="scholarship-content">
-                        <div class="scholarship-deadline">Deadline: Varies by partner university</div>
-                        <h3>Mastercard Foundation Scholars Program</h3>
-                        <p>Comprehensive scholarships for African students to study at partner universities worldwide, including in South Africa.</p>
-                        <div class="scholarship-eligibility">
-                            <strong>Eligibility:</strong> Academically talented young Africans with leadership potential
-                        </div>
-                    </div>
-                </div>
-
-                <!-- University of Zambia -->
-                <div class="scholarship-card">
-                    <div class="scholarship-image">
-                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="University of Zambia">
-                        <div class="scholarship-overlay">
-                            <a href="https://www.unza.zm/" target="_blank" class="btn">Visit UNZA</a>
-                        </div>
-                    </div>
-                    <div class="scholarship-content">
-                        <div class="scholarship-deadline">Application Period: Jan-Mar 2025</div>
-                        <h3>University of Zambia (UNZA)</h3>
-                        <p>Zambia's premier university offering various programs with government and private scholarship opportunities.</p>
-                        <div class="scholarship-eligibility">
-                            <strong>Eligibility:</strong> Meet entry requirements for chosen program
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Copperbelt University -->
-                <div class="scholarship-card">
-                    <div class="scholarship-image">
-                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Copperbelt University">
-                        <div class="scholarship-overlay">
-                            <a href="https://www.cbu.ac.zm/" target="_blank" class="btn">Visit CBU</a>
-                        </div>
-                    </div>
-                    <div class="scholarship-content">
-                        <div class="scholarship-deadline">Application Period: Feb-Apr 2025</div>
-                        <h3>Copperbelt University (CBU)</h3>
-                        <p>Leading university in engineering and technology fields with various scholarship opportunities for Zambian students.</p>
-                        <div class="scholarship-eligibility">
-                            <strong>Eligibility:</strong> Meet entry requirements, especially in sciences for engineering programs
-                        </div>
-                    </div>
-                </div>
-
-                <!-- More Scholarship Opportunities -->
-                <div class="scholarship-card">
-                    <div class="scholarship-image">
-                        <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0dWRlbnQlMjBzY2hvbGFyc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="More Scholarships">
-                        <div class="scholarship-overlay">
-                            <a href="#contact" class="btn">Contact for Info</a>
-                        </div>
-                    </div>
-                    <div class="scholarship-content">
-                        <div class="scholarship-deadline">Various Deadlines</div>
-                        <h3>Additional Opportunities</h3>
-                        <p>Various private and international scholarships available for Zambian students in specific fields like mining engineering.</p>
-                        <div class="scholarship-eligibility">
-                            <strong>Eligibility:</strong> Varies by scholarship provider
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mining Company Scholarships -->
-                <div class="scholarship-card">
-                    <div class="scholarship-image">
-                        <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWluaW5nJTIwaW5kdXN0cnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Mining Scholarships">
-                        <div class="scholarship-overlay">
-                            <a href="#contact" class="btn">Find out more</a>
-                        </div>
-                    </div>
-                    <div class="scholarship-content">
-                        <div class="scholarship-deadline">Varies by company and NGOs/Associations</div>
-                        <h3>Other Buraries</h3>
-                        <p>Several companies in South Africa & Zambia offer bursaries and scholarships for students pursuing diffferent fields-related degrees.</p>
-                        <div class="scholarship-eligibility">
-                            <strong>Eligibility:</strong> Interest or field aligned with the respective industries, strong academic record
+                
+                <div class="scholarship-details">
+                    <button class="btn" onclick="toggleHelsbDetails()">HELSB Scholarship Details</button>
+                    
+                    <div class="helsb-details" id="helsbDetails">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-info-circle"></i> HELSB Scholarship Details</h4>
+                            <p>The Higher Education Loans & Scholarships Board (HELSB) provides government-funded loans and scholarships for Zambian students pursuing higher education at recognized public and private institutions.</p>
+                            
+                            <h5>Eligibility Criteria</h5>
+                            <ul>
+                                <li>Zambian citizen with a valid NRC</li>
+                                <li>Admitted to an accredited higher education institution</li>
+                                <li>Good academic record (Minimum 5 O-level credits)</li>
+                                <li>Not benefiting from any other scholarship</li>
+                                <li>Meets specific program requirements</li>
+                            </ul>
+                            
+                            <h5>Application Requirements</h5>
+                            <ul>
+                                <li>Completed HELSB application form</li>
+                                <li>Certified copy Grade 12 Certificate or statement of results</li>
+                                <li>Birth Certificate (Original & Photocopy)</li>
+                                <li>Certified copy of a valid National Registration Card (NRC)</li>
+                                <li>Admission letter from respective institution</li>
+                                <li>Fee structure from institution</li>
+                                <li>Recent passport-size photographs</li>
+                                <li>Recommendation letters (School/Chief/Headman)</li>
+                                <li>Parent/Guardian income statement</li>
+                            </ul>
+                            
+                            <h5>Application Timeline</h5>
+                            <div class="timeline-grid">
+                                <div class="timeline-item">
+                                    <strong>The University of Zambia</strong>
+                                    <span>August - October</span>
+                                    <span>Expected List release date: November</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>Copperbelt University</strong>
+                                    <span>May - July</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>MUKUBA</strong>
+                                    <span>To be updated</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>MULUNGUSHI University</strong>
+                                    <span>To be updated</span>
+                                </div>
+                            </div>
+                            <p class="timeline-note">*Dates are approximate - check HELSB website for exact deadlines</p>
                         </div>
                     </div>
                 </div>
@@ -1746,47 +1906,434 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- University Applications Page -->
+    <section id="university-apps" class="page-section">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to discussing work experience opportunities, Volunteering, collaborations, Private Tutoring, or mentoring in STEM fields.</p>
-            <p>     My contact details are below; you may also contact me through my active social media platforms: LinkedIn, Instagram and/or Facebook.</p>
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>University Application Guidance</h2>
+                <p>Step-by-step guidance for applying to universities in Zambia and internationally.</p>
+                
+                <h3>Local Zambian Universities</h3>
+                <div class="university-grid">
+                    <div class="university-card">
+                        <h3>University of Zambia (UNZA)</h3>
+                        <p><strong>Location:</strong> Lusaka</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.unza.zm/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Copperbelt University (CBU)</h3>
+                        <p><strong>Location:</strong> Kitwe</p>
+                        <p><strong>Programs:</strong> Engineering, Business, Medicine</p>
+                        <a href="https://www.cbu.ac.zm/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Mulungushi University</h3>
+                        <p><strong>Location:</strong> Kabwe</p>
+                        <p><strong>Programs:</strong> Business, Education, Agriculture</p>
+                        <a href="https://www.mu.ac.zm/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Zambia Catholic University</h3>
+                        <p><strong>Location:</strong> Kalulushi</p>
+                        <p><strong>Programs:</strong> Humanities, Social Sciences</p>
+                        <a href="https://www.zacu.edu.zm/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Rusangu University</h3>
+                        <p><strong>Location:</strong> Monze</p>
+                        <p><strong>Programs:</strong> Theology, Education, Business</p>
+                        <a href="https://www.rusangu-university.edu.zm/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Northrise University</h3>
+                        <p><strong>Location:</strong> Ndola</p>
+                        <p><strong>Programs:</strong> Business, IT, Theology</p>
+                        <a href="https://www.northrise.org/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                </div>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <span>Email:</span>
-                        <a href="mailto:siabanamilimo003@gmail.com">siabanamilimo003@gmail.com</a>
+                <h3>International Universities (South Africa)</h3>
+                <div class="university-grid">
+                    <div class="university-card">
+                        <h3>University of Cape Town</h3>
+                        <p><strong>Location:</strong> Cape Town</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.uct.ac.za/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>University of the Witwatersrand</h3>
+                        <p><strong>Location:</strong> Johannesburg</p>
+                        <p><strong>Programs:</strong> Engineering, Health Sciences, Humanities</p>
+                        <a href="https://www.wits.ac.za/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Stellenbosch University</h3>
+                        <p><strong>Location:</strong> Stellenbosch</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.sun.ac.za/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>University of Pretoria</h3>
+                        <p><strong>Location:</strong> Pretoria</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.up.ac.za/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>University of Johannesburg</h3>
+                        <p><strong>Location:</strong> Johannesburg</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.uj.ac.za/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Rhodes University</h3>
+                        <p><strong>Location:</strong> Grahamstown</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.ru.ac.za/" target="_blank" class="btn">Visit Website</a>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <span>Phone/WhatsApp:</span>
-                        <a href="tel:+260976452281">+260 976 452 281</a>
+
+                <h3>Other International Universities</h3>
+                <div class="university-grid">
+                    <div class="university-card">
+                        <h3>Harvard University</h3>
+                        <p><strong>Location:</strong> USA</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.harvard.edu/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>Stanford University</h3>
+                        <p><strong>Location:</strong> USA</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.stanford.edu/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>University of Oxford</h3>
+                        <p><strong>Location:</strong> UK</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.ox.ac.uk/" target="_blank" class="btn">Visit Website</a>
+                    </div>
+                    
+                    <div class="university-card">
+                        <h3>University of Cambridge</h3>
+                        <p><strong>Location:</strong> UK</p>
+                        <p><strong>Programs:</strong> Various undergraduate and postgraduate programs</p>
+                        <a href="https://www.cam.ac.uk/" target="_blank" class="btn">Visit Website</a>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <span>Location:</span>
-                        <span>Lusaka, Zambia</span>
+
+                <h3>Application Process</h3>
+                <ol>
+                    <li>Research universities and programs</li>
+                    <li>Check entry requirements</li>
+                    <li>Prepare required documents</li>
+                    <li>Submit application before deadline</li>
+                    <li>Prepare for interviews if required</li>
+                    <li>Accept offer and register</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Page -->
+    <section id="updates" class="page-section">
+        <div class="container">
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>Latest Updates & News</h2>
+                <p>Stay informed about my latest activities, success stories, and opportunities.</p>
+                
+                <div class="rotating-scholarships">
+                    <h3>Currently Open Scholarships & Applications</h3>
+                    <div class="scholarship-slide active">
+                        <h4>Mastercard Foundation Scholars Program</h4>
+                        <p>Applications now open for 2024/2025 academic year</p>
+                        <a href="https://mastercardfdn.org/all/scholarships/" target="_blank" class="btn">Apply Now</a>
+                    </div>
+                    <div class="scholarship-slide">
+                        <h4>University of Cape Town Scholarships</h4>
+                        <p>Multiple scholarship opportunities for international students</p>
+                        <a href="https://www.uct.ac.za/" target="_blank" class="btn">Apply Now</a>
+                    </div>
+                    <div class="scholarship-slide">
+                        <h4>Turkish Government Scholarships</h4>
+                        <p>Full scholarships for undergraduate and postgraduate studies</p>
+                        <a href="https://www.turkiyeburslari.gov.tr/" target="_blank" class="btn">Apply Now</a>
+                    </div>
+                    <div class="scholarship-slide">
+                        <h4>HELSB Government Scholarships</h4>
+                        <p>Applications open for Zambian students</p>
+                        <a href="https://www.helsb.gov.zm/" target="_blank" class="btn">Apply Now</a>
+                    </div>
+                    <div class="scholarship-slide">
+                        <h4>University of Miami Presidential Fellows</h4>
+                        <p>Full-tuition scholarship for outstanding international students</p>
+                        <a href="https://admissions.miami.edu/undergraduate/financial-aid/scholarships/presidential/index.html" target="_blank" class="btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="updates-grid">
+                    <div class="update-card">
+                        <div class="update-image">
+                            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2Nob2xhcnNoaXB8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Scholarship Workshop">
+                        </div>
+                        <div class="update-content">
+                            <div class="update-date">January 2024</div>
+                            <h3>Scholarship Workshop</h3>
+                            <p>Join my upcoming scholarship workshop to learn about application processes and deadlines for various scholarships.</p>
+                            <a href="#scholarships" class="btn" style="margin-top: 15px;">View Scholarships</a>
+                        </div>
+                    </div>
+                    
+                    <div class="update-card">
+                        <div class="update-image">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="University Fair">
+                        </div>
+                        <div class="update-content">
+                            <div class="update-date">December 2023</div>
+                            <h3>University Fair</h3>
+                            <p>My annual university fair connected over 500 students with representatives from local and international universities.</p>
+                            <a href="#university-apps" class="btn" style="margin-top: 15px;">View Universities</a>
+                        </div>
+                    </div>
+                    
+                    <div class="update-card">
+                        <div class="update-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5dGljc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Open Applications">
+                        </div>
+                        <div class="update-content">
+                            <div class="update-date">Current</div>
+                            <h3>Open Applications</h3>
+                            <p>Several universities and scholarship programs are currently accepting applications for the 2024/2025 academic year.</p>
+                            <a href="#scholarships" class="btn" style="margin-top: 15px;">Apply Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Entrepreneurship Page -->
+    <section id="entrepreneurship" class="page-section">
+        <div class="container">
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
             
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/milimo-siabana-6b380b300" target="_blank" title="Connect on LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://web.facebook.com/milimo.siabana" target="_blank" title="Connect on Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/milimo.munyama/" target="_blank" title="Connect on Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="content-section">
+                <h2>Entrepreneurship & Business Opportunities</h2>
+                <p>Explore various business and entrepreneurship opportunities for Zambian youth.</p>
+                
+                <h3>Volunteer & Part-Time Work Opportunities</h3>
+                <div class="scholarship-links">
+                    <a href="https://www.volunteerworld.com/en/volunteer-abroad/zambia" target="_blank" class="scholarship-link">Volunteer World - Zambia</a>
+                    <a href="https://www.idealist.org/en" target="_blank" class="scholarship-link">Idealist - Global Volunteering</a>
+                    <a href="https://www.unv.org/" target="_blank" class="scholarship-link">UN Volunteers</a>
+                    <a href="https://www.gooverseas.com/volunteer-abroad/zambia" target="_blank" class="scholarship-link">Go Overseas - Zambia</a>
+                    <a href="https://www.peacecorps.gov/volunteer/volunteer-openings/" target="_blank" class="scholarship-link">Peace Corps</a>
+                </div>
+                
+                <h3>Small Business Ideas</h3>
+                <div class="button-grid">
+                    <button class="section-btn">
+                        <i class="fas fa-store"></i><br>Small Business Ideas
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-chart-line"></i><br>Market Opportunities
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-hand-holding-usd"></i><br>Funding Sources
+                    </button>
+                    <button class="section-btn">
+                        <i class="fas fa-users"></i><br>Networking Events
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Page -->
+    <section id="success-stories" class="page-section">
+        <div class="container">
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>My Achievements & Success Stories</h2>
+                <p>Meet some of the students I've helped achieve their educational dreams.</p>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Student" class="author-avatar">
+                            <div>
+                                <strong>John Banda</strong><br>
+                                <small>Computer Science Student</small>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            "Thanks to Milimo Siabana's guidance, I received a full scholarship to study Computer Science at the University of Zambia. The guidance was invaluable!"
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Student" class="author-avatar">
+                            <div>
+                                <strong>Sarah Mwale</strong><br>
+                                <small>Medical Student</small>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            "The mentorship program helped me navigate the complex university application process. I'm now studying Medicine thanks to Milimo's support."
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Student" class="author-avatar">
+                            <div>
+                                <strong>David Phiri</strong><br>
+                                <small>Engineering Student</small>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            "Milimo Siabana's helped me secure a scholarship to study Engineering at Copperbelt University. His guidance made all the difference!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Page -->
+    <section id="contact" class="page-section">
+        <div class="container">
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>Contact Me</h2>
+                <p>Have questions? Get in touch with me for more information.</p>
+                
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="sendEmail(event, 'contact')">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="scholarship">Scholarship Inquiry</option>
+                                <option value="university">University Applications</option>
+                                <option value="mentorship">Mentorship Program</option>
+                                <option value="tutoring">Private Tutoring</option>
+                                <option value="advertising">Advertising Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join My Team Page -->
+    <section id="join-team" class="page-section">
+        <div class="container">
+            <button class="btn back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+            
+            <div class="content-section">
+                <h2>Join My Team</h2>
+                <p>Interested in becoming a mentor or volunteering with me? I'd love to have you on board!</p>
+                
+                <div class="contact-form">
+                    <form id="mentorshipForm" onsubmit="sendEmail(event, 'mentorship')">
+                        <div class="form-group">
+                            <label for="mentor-name">Full Name</label>
+                            <input type="text" id="mentor-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mentor-email">Email Address</label>
+                            <input type="email" id="mentor-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mentor-phone">Phone Number</label>
+                            <input type="tel" id="mentor-phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="education-level">Highest Education Level</label>
+                            <select id="education-level" name="education-level" required>
+                                <option value="">Select education level</option>
+                                <option value="high-school">High School</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="bachelors">Bachelor's Degree</option>
+                                <option value="masters">Master's Degree</option>
+                                <option value="phd">PhD</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contribution">How would you like to contribute?</label>
+                            <select id="contribution" name="contribution" required>
+                                <option value="">Select contribution type</option>
+                                <option value="mentorship">Mentorship</option>
+                                <option value="tutoring">Tutoring</option>
+                                <option value="sponsorship">Sponsorship/Donation</option>
+                                <option value="volunteer">Volunteer Work</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="availability">Availability (hours per week)</label>
+                            <input type="number" id="availability" name="availability" min="1" max="40">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mentor-message">Why do you want to join and what skills/experience can you bring?</label>
+                            <textarea id="mentor-message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Express Interest</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -1795,15 +2342,112 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">Milimo Siabana</div>
-                <p class="footer-quote">"Let us by our deeds be judged" - Hillcrest Motto (Former school)</p>
-                <p>Dux Scholar 25' | STEM Enthusisat | Maths & ScienceTutor, in - person or online | Knowledge is Power</p>
-                <p>&copy; 2025 Milimo Siabana. All Rights Reserved.</p>
+                <div class="footer-section">
+                    <h3>Milimo Siabana's</h3>
+                    <p>Connecting Zambian students to education, careers, and opportunities through mentorship and guidance.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/milimo-siabana-6b380b300" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://web.facebook.com/milimo.siabana" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/milimo.munyama/" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                        <li><a href="#services" onclick="showPage('home')">My Services</a></li>
+                        <li><a href="#scholarships" onclick="showPage('scholarships')">Scholarships</a></li>
+                        <li><a href="#tutoring" onclick="showPage('tutoring')">Private Tutoring</a></li>
+                        <li><a href="#advertising" onclick="showPage('advertising')">Advertising Services</a></li>
+                        <li><a href="#success-stories" onclick="showPage('success-stories')">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> 
+                            <a href="mailto:siabanamilimo003@gmail.com" class="contact-link">siabanamilimo003@gmail.com</a>
+                        </li>
+                        <li><i class="fas fa-phone"></i> 
+                            <a href="tel:+260976452281" class="contact-link">+260 976 452 281</a>
+                        </li>
+                        <li><i class="fab fa-whatsapp"></i> 
+                            <a href="https://wa.me/260976452281" class="contact-link">WhatsApp</a>
+                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>My Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#university-apps" onclick="showPage('university-apps')">University Applications</a></li>
+                        <li><a href="#scholarships" onclick="showPage('scholarships')">Scholarship Guidance</a></li>
+                        <li><a href="#tutoring" onclick="showPage('tutoring')">Private Tutoring</a></li>
+                        <li><a href="#advertising" onclick="showPage('advertising')">Advertising Services</a></li>
+                        <li><a href="#entrepreneurship" onclick="showPage('entrepreneurship')">Entrepreneurship</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Milimo Siabana's. All Rights Reserved. | Founded by Milimo Siabana</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Track navigation history
+        let pageHistory = ['home'];
+        
+        // Page Navigation
+        function showPage(pageId) {
+            // Add current page to history
+            pageHistory.push(pageId);
+            
+            // Hide all pages
+            document.querySelectorAll('.page-section').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update active nav link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Go back to previous page
+        function goBack() {
+            if (pageHistory.length > 1) {
+                // Remove current page
+                pageHistory.pop();
+                // Get previous page
+                const previousPage = pageHistory[pageHistory.length - 1];
+                showPage(previousPage);
+            } else {
+                // If no history, go to home
+                showPage('home');
+            }
+        }
+        
         // Mobile menu toggle
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
@@ -1830,28 +2474,8 @@
             });
         });
         
-        // Add active class to nav links when scrolling
+        // Header scroll effect
         window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if(scrollY >= (sectionTop - 100)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if(link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-            
-            // Header scroll effect
             const header = document.getElementById('header');
             if (window.scrollY > 100) {
                 header.classList.add('scrolled');
@@ -1860,60 +2484,327 @@
             }
         });
         
-        // Education cards functionality
-        document.querySelectorAll('.education-card').forEach(card => {
-            card.addEventListener('click', function() {
-                const educationType = this.getAttribute('data-education');
-                const modal = document.getElementById(`${educationType}-modal`);
-                if (modal) {
-                    modal.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                }
-            });
-        });
+        // Hero background slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.background-slide');
         
-        // Close modal functionality
-        document.querySelectorAll('.modal-close').forEach(closeBtn => {
-            closeBtn.addEventListener('click', function() {
-                this.closest('.education-modal').classList.remove('active');
-                document.body.style.overflow = 'auto';
-            });
-        });
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
         
-        // Close modal when clicking outside
-        document.querySelectorAll('.education-modal').forEach(modal => {
-            modal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    this.classList.remove('active');
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
+        // Change slide every 3 seconds
+        setInterval(nextSlide, 3000);
         
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.querySelectorAll('.education-modal').forEach(modal => {
-                    modal.classList.remove('active');
-                    document.body.style.overflow = 'auto';
-                });
+        // Rotating scholarships
+        let currentScholarship = 0;
+        const scholarshipSlides = document.querySelectorAll('.scholarship-slide');
+        
+        function nextScholarship() {
+            scholarshipSlides[currentScholarship].classList.remove('active');
+            currentScholarship = (currentScholarship + 1) % scholarshipSlides.length;
+            scholarshipSlides[currentScholarship].classList.add('active');
+        }
+        
+        // Change scholarship every 3 seconds
+        setInterval(nextScholarship, 3000);
+        
+        // Toggle HELSB details
+        function toggleHelsbDetails() {
+            const helsbDetails = document.getElementById('helsbDetails');
+            helsbDetails.classList.toggle('active');
+        }
+        
+        // Dynamic content loading for My Story
+        function showStorySection(section) {
+            const contentDisplay = document.getElementById('story-content-display');
+            let content = '';
+            
+            switch(section) {
+                case 'early-life':
+                    content = `
+                        <h3>Early Life & Background</h3>
+                        <p>I was born on July 11, 2003, in Maakula Village, Sinazongwe District, in Zambia's Southern Province. My childhood was shaped by the rhythms of rural life: the vastness of Lake Kariba, the responsibility of tending cattle, and the creativity born from necessity.</p>
+                        
+                        <p>My early years were spent fishing for bream with friends, farming, and looking after our cattle. These weren't just pastimes; they were a means of subsistence. I learned the value of perseverance on days when the fish weren't biting, and the importance of resourcefulness by selling my catch to buy clothes and support my grandmother, who raised me. From molding animals out of clay and crafting wire vehicles, I developed a hands-on creativity that would later become the foundation for my passion in STEM.</p>
+                        
+                        <p>Life was not without its challenges or dangers. I recall a harrowing moment when my brothers and I were nearly attacked by crocodiles while playing near Lake Kariba. I walked barefoot for most of my youth, mending worn-out flip-flops because my family's limited income was prioritized for food. Yet, these experiences didn't harden me; they taught me resilience, ingenuity, and a deep appreciation for every opportunity.</p>
+                        
+                        <div class="early-life-images">
+                            <div class="early-life-image">
+                                <img src="ME&Ox.png" alt="Village Life">
+                                <div class="image-caption">Maakula Village, Sinazongwe District</div>
+                            </div>
+                            <div class="early-life-image">
+                                <img src="fishing.jpg" alt="Fishing">
+                                <div class="image-caption">Lake Kariba - where I spent my early years fishing</div>
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case 'education':
+                    content = `
+                        <h3>Education Journey</h3>
+                        <p>My educational journey has been marked by excellence, perseverance, and numerous achievements across different institutions.</p>
+                        
+                        <div class="education-grid">
+                            <div class="education-card">
+                                <div class="education-image">
+                                    <img src="trident-college.jpg" alt="Trident College">
+                                </div>
+                                <div class="education-info">
+                                    <div class="education-date">2024 - 2025</div>
+                                    <h3>Trident College Solwezi</h3>
+                                    <p class="education-level">Cambridge International A Levels</p>
+                                    <p>Dux Scholar • SERVICE AWARD with HONOURS • 4 A Levels, 1 AS Level • Head of Kansanshi Junior Boys Boarding house</p>
+                                </div>
+                            </div>
+
+                            <div class="education-card">
+                                <div class="education-image">
+                                    <img src="Hillcrest.jpg" alt="Hillcrest Technical School">
+                                </div>
+                                <div class="education-info">
+                                    <div class="education-date">2021 - 2023</div>
+                                    <h3>Hillcrest Boys National STEM Secondary School</h3>
+                                    <p class="education-level">Senior Secondary Education, Grade 10 - 12.</p>
+                                    <p>HEAD BOY • 8 Distinctions • National Math Olympiad Winner</p>
+                                </div>
+                            </div>
+
+                            <div class="education-card">
+                                <div class="education-image">
+                                    <img src="Sinanjola.jpg" alt="Sinanjola Basic School">
+                                </div>
+                                <div class="education-info">
+                                    <div class="education-date">2019 - 2020</div>
+                                    <h3>Sinanjola Basic School</h3>
+                                    <p class="education-level">Junior Secondary School</p>
+                                    <p>Junior Secondary Certificate • Scored 534 • Grade 8 - 9</p>
+                                </div>
+                            </div>
+
+                            <div class="education-card">
+                                <div class="education-image">
+                                    <img src="Sinanjola.jpg" alt="Sinanjola Basic School">
+                                </div>
+                                <div class="education-info">
+                                    <div class="education-date">2012 - 2018</div>
+                                    <h3>Sinanjola Basic School</h3>
+                                    <p class="education-level">Primary Education</p>
+                                    <p>Grade 7 Certificate • 831 Marks • Grade 1 to 7</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case 'achievements':
+                    content = `
+                        <h3>Achievements & Awards</h3>
+                        <ul>
+                            <li><strong>2025:</strong> Dux Scholar at Trident College Solwezi</li>
+                            <li><strong>2023:</strong> National Senior Mathematics Olympiad Winner</li>
+                            <li><strong>2021-2023:</strong> Overall Best Student at Hillcrest (Grades 10-12)</li>
+                            <li><strong>2018:</strong> 1st Prize in Southern 'B' Regional Primary Mathematics Olympiads</li>
+                            <li><strong>SESTUZ Scholarship</strong> recipient for STEM education</li>
+                            <li><strong>FQML Scholarship</strong> for A-Level studies</li>
+                        </ul>
+                    `;
+                    break;
+                case 'experience':
+                    content = `
+                        <h3>Work Experience & Leadership</h3>
+                        <div class="experience-grid">
+                            <div class="experience-card">
+                                <h3><i class="fas fa-chalkboard-teacher"></i> IGCSE & A Level Tutor & Mentor</h3>
+                                <div class="experience-date">May to October 2025</div>
+                                <p>Provided tutoring in IGCSE Mathematics and served as Further Mathematics and Physics A Level Mentor at Trident College Solwezi.</p>
+                            </div>
+                            <div class="experience-card">
+                                <h3><i class="fas fa-atom"></i> President of STEM Club</h3>
+                                <div class="experience-date">January to November 2025</div>
+                                <p>Led the STEM Club at Trident College, preparing students for Olympiads in Mathematics, Physics, Chemistry & Biology, and coaching students in research methodology.</p>
+                            </div>
+                            <div class="experience-card">
+                                <h3><i class="fas fa-gavel"></i> National JETS Fair Adjudicator</h3>
+                                <div class="experience-date">11th – 15th August 2025</div>
+                                <p>Senior Mathematics Innovations Adjudicator at National Science Centre, evaluating student mathematical innovations and helping refine ideas.</p>
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case 'skills':
+                    content = `
+                        <h3>Skills & Competencies</h3>
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h3><i class="fas fa-language"></i> Languages & Communication</h3>
+                                <ul class="skill-items">
+                                    <li>Fluent in English and Tonga</li>
+                                    <li>Average proficiency in Nyanja</li>
+                                    <li>Excellent writing and oral communication skills</li>
+                                    <li>Certificate in Communication</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3><i class="fas fa-users"></i> Leadership & Management</h3>
+                                <ul class="skill-items">
+                                    <li>Leadership and teamwork</li>
+                                    <li>Time management and organizational skills</li>
+                                    <li>Facilitation and coordination</li>
+                                    <li>Public speaking and conflict resolution</li>
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case 'hobbies':
+                    content = `
+                        <h3>Hobbies & Interests</h3>
+                        <p>Beyond academics, I have a variety of interests that help me maintain balance and continue learning:</p>
+                        <ul>
+                            <li><strong>Reading:</strong> I enjoy reading books on personal development, science, and biographies of successful individuals</li>
+                            <li><strong>Community Service:</strong> Volunteering at Cheshire Homes and mentoring younger students</li>
+                            <li><strong>STEM Activities:</strong> Participating in science fairs, mathematics competitions, and STEM bootcamps</li>
+                            <li><strong>Sports:</strong> Playing soccer and other physical activities to stay active</li>
+                            <li><strong>Music:</strong> Listening to various genres of music and occasionally playing instruments</li>
+                        </ul>
+                    `;
+                    break;
+                default:
+                    content = `<p>Select a section to learn more about my journey.</p>`;
             }
-        });
+            
+            contentDisplay.innerHTML = content;
+        }
+        
+        // Email sending function
+        function sendEmail(event, formType) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            let emailBody = '';
+            
+            if (formType === 'contact') {
+                emailBody = `Name: ${formData.get('name')}
+Email: ${formData.get('email')}
+Phone: ${formData.get('phone')}
+Subject: ${formData.get('subject')}
+Message: ${formData.get('message')}`;
+            } else if (formType === 'mentorship') {
+                emailBody = `Name: ${formData.get('name')}
+Email: ${formData.get('email')}
+Phone: ${formData.get('phone')}
+Education Level: ${formData.get('education-level')}
+Contribution Type: ${formData.get('contribution')}
+Availability: ${formData.get('availability')} hours/week
+Message: ${formData.get('message')}`;
+            }
+            
+            // Create mailto link
+            const mailtoLink = `mailto:siabanamilimo003@gmail.com?subject=${encodeURIComponent('Milimo Siabana\'s Inquiry')}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            if (formType === 'contact') {
+                alert('Thank you for your message! Your email client will open with your inquiry. Please send the email to complete the process.');
+            } else {
+                alert('Thank you for your interest in joining my team! Your email client will open with your application. Please send the email to complete the process.');
+            }
+            
+            // Reset form
+            form.reset();
+        }
+
+        // New functions for tutoring and advertising forms
+        function sendTutoringRequest(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            let emailBody = `Tutoring Request:
+Student Name: ${formData.get('student-name')}
+Parent/Guardian Name: ${formData.get('parent-name')}
+Email: ${formData.get('email')}
+Phone: ${formData.get('phone')}
+Grade/Level: ${formData.get('grade-level')}
+Subjects: ${formData.get('subjects')}
+Additional Information: ${formData.get('message')}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:siabanamilimo003@gmail.com?subject=${encodeURIComponent('Milimo Siabana\'s Tutoring Request')}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your tutoring request! Your email client will open with your request. Please send the email to complete the process.');
+            
+            // Reset form
+            form.reset();
+        }
+        
+        function sendAdvertisingRequest(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            let emailBody = `Advertising Services Request:
+Business/Organization Name: ${formData.get('business-name')}
+Contact Person: ${formData.get('contact-person')}
+Email: ${formData.get('email')}
+Phone: ${formData.get('phone')}
+Service Type: ${formData.get('service-type')}
+Budget: ${formData.get('budget')} USD
+Message: ${formData.get('message')}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:siabanamilimo003@gmail.com?subject=${encodeURIComponent('Milimo Siabana\'s Advertising Request')}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your advertising request! Your email client will open with your request. Please send the email to complete the process.');
+            
+            // Reset form
+            form.reset();
+        }
+        
+        function sendSignupRequest(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            let emailBody = `Service Sign Up:
+Name: ${formData.get('name')}
+Email: ${formData.get('email')}
+Phone: ${formData.get('phone')}
+Service of Interest: ${formData.get('service-interest')}
+Message: ${formData.get('message')}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:siabanamilimo003@gmail.com?subject=${encodeURIComponent('Milimo Siabana\'s Service Sign Up')}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for signing up! Your email client will open with your request. Please send the email to complete the process.');
+            
+            // Reset form
+            form.reset();
+        }
+
+        // Initialize the first story section
+        showStorySection('early-life');
     </script>
-    <!-- Add this temporary test section before closing body tag -->
-<div style="position: fixed; bottom: 10px; right: 10px; background: #27ae60; color: white; padding: 10px; border-radius: 5px; z-index: 9999;">
-    Consistency!
-</div>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
