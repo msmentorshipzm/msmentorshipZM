@@ -1131,7 +1131,7 @@
             updateInterval = setInterval(() => {
                 const nextIndex = (currentUpdateIndex + 1) % updateCards.length;
                 showUpdate(nextIndex);
-            }, ); // Change every 6 seconds
+            },800000000000 ); // Change every 6 seconds
         }
 
         function resetUpdateInterval() {
@@ -1711,5 +1711,6 @@
     </script>
 </body>
 </html>
+
 
 
