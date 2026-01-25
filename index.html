@@ -1205,11 +1205,11 @@
         }
 
         // Auto-rotate updates - FIXED TIMER (15 seconds)
-        //function startUpdateInterval() {
+        function startUpdateInterval() {
             updateInterval = setInterval(() => {
                 const nextIndex = (currentUpdateIndex + 1) % updateCards.length;
                 showUpdate(nextIndex);
-            }, 15000); // 
+            }, 15000); 
         }
 
         function resetUpdateInterval() {
@@ -2771,6 +2771,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
 
 
