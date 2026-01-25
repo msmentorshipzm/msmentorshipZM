@@ -697,7 +697,7 @@
             <p class="text-center" style="margin-bottom: 40px; color: rgba(255,255,255,0.9); max-width: 800px; margin-left: auto; margin-right: auto;">
                 Stay updated with current opportunities. Click on any update for more details.
                 Open Universities and Webinars are all updated here. Just click on the link to apply.
-                HELSB APPLICATIONS ONLINE OPEN WHEN Partner universities admit students for that intake. 
+                HELSB ONLINE APPLICATIONS OPEN WHEN Partner universities admit students for that intake. 
             </p>
             
             <div class="updates-container" id="updates-container">
@@ -728,7 +728,7 @@
                 </div>
                 <div class="update-card">
                     <span class="update-status status-open">FREE WEBINAR: MOROCCO APPLICATIONS INFORMATION SESSION</span>
-                    <h4>25 January 2026, Sunday 21:00 hours CAT</h4>
+                    <h4><strong>25 January 2026, Sunday 21:00 hours CAT</strong></h4>
                     <p>Join us this evening as we discuss how to apply to Morocco, the key timeliness and all the processes with Divine Kalimina.</p>
                     <a href="https://meet.google.com/tgj-enfg-jsq" class="btn">
                         <i class="fas fa-calendar-check"></i> Click here to Join the webinar
@@ -1205,11 +1205,11 @@
         }
 
         // Auto-rotate updates - FIXED TIMER (15 seconds)
-        function startUpdateInterval() {
+        //function startUpdateInterval() {
             updateInterval = setInterval(() => {
                 const nextIndex = (currentUpdateIndex + 1) % updateCards.length;
                 showUpdate(nextIndex);
-            }, 15000); // Changed from 800000000000 to 15000 (15 seconds)
+            }, 15000); // 
         }
 
         function resetUpdateInterval() {
@@ -2771,6 +2771,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
 
 
