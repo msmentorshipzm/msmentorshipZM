@@ -1126,7 +1126,7 @@
                     <p style="color:#ccc; margin-top:15px;">Empowering Zambian students navigate their university and scholarship through mentorship and guidance.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/ms-mentorship/posts?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bt6YcmAO4Q4CczlSMoZE13Q%3D%3D"><i class="fab fa-linkedIn"></i></a>
+                        <a href="https://www.linkedin.com/company/ms-mentorship/posts?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bt6YcmAO4Q4CczlSMoZE13Q%3D%3D"><i class="fab fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/ms_mentorship/"><i class="fab fa-instagram"></i></a>
                         <a href="https://chat.whatsapp.com/HtA7cxJKK5dGE5JC7Bv6Pj" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         <a href="mailto:msmentorship3@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -1140,7 +1140,7 @@
                         <li><a href="#scholarships">Scholarship Finder</a></li>
                         <li><a href="#find-course">University Finder</a></li>
                         <li><a href="#team">Our Team</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#faq">FAQs</a></li>
                     </ul>
                 </div>
                 <div>
@@ -1182,7 +1182,7 @@
         setInterval(changeHeroSlide, 5000);
 
         // ===================
-        // 2. UPDATES SECTION - MOBILE FRIENDLY - FIXED AUTO SCROLL ISSUE
+        // 2. UPDATES SECTION - MOBILE FRIENDLY
         // ===================
         const updateCards = document.querySelectorAll('.update-card');
         const updateNav = document.getElementById('update-nav');
@@ -1202,7 +1202,7 @@
             updateNav.appendChild(dot);
         });
 
-        // Function to show specific update - REMOVED AUTO-SCROLL
+        // Function to show specific update - 
         function showUpdate(index) {
             // Hide all updates
             updateCards.forEach(card => {
@@ -1217,13 +1217,11 @@
                 dot.classList.toggle('active', i === index);
             });
             
-            // REMOVED THE AUTO-SCROLL CODE THAT WAS CAUSING THE ISSUE
-            // The scrollIntoView() was causing the page to scroll upwards
-            
+                
             currentUpdateIndex = index;
         }
 
-        // Auto-rotate updates - KEPT BUT WITHOUT AUTO-SCROLL
+        // Auto-rotate updates 
         function startUpdateInterval() {
             updateInterval = setInterval(() => {
                 const nextIndex = (currentUpdateIndex + 1) % updateCards.length;
@@ -2530,5 +2528,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+
 
 
