@@ -120,7 +120,7 @@
         .nav-links a:hover:after, .nav-links a.active:after { width: 100%; }
         .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-blue); }
 
-        /* Hero with Sliding Background - UPDATED WITH YOUR IMAGE */
+        /* Hero with Sliding Background */
         .hero {
             height: 90vh;
             position: relative;
@@ -1508,7 +1508,7 @@
         });
     </script>
     <!-- ==================== -->
-<!-- IMPROVED AI CHAT BOX WIDGET -->
+<!--AI CHAT BOX WIDGET -->
 <!-- ==================== -->
 <style>
     /* Chat Toggle Button - Looks like original AI button */
@@ -1920,7 +1920,7 @@
 
 <script>
 // ==================== //
-// IMPROVED AI CHAT LOGIC //
+// AI CHAT LOGIC //
 // ==================== //
 document.addEventListener('DOMContentLoaded', function() {
     // DOM Elements
@@ -2526,9 +2526,24 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 });
 </script> 
-
+<script>
+// Remove any duplicate Google verification tags that might be injected
+window.addEventListener('load', function() {
+    // Find all meta tags with name="google-site-verification"
+    const metaTags = document.querySelectorAll('meta[name="google-site-verification"]');
+    
+    // If there's more than one, remove all except the first one (yours)
+    if (metaTags.length > 1) {
+        for (let i = 1; i < metaTags.length; i++) {
+            metaTags[i].remove();
+        }
+        console.log('Removed duplicate verification tags');
+    }
+});
+</script>
 </body>
 </html>
+
 
 
 
