@@ -2526,23 +2526,9 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 });
 </script> 
-<script>
-// Remove any duplicate Google verification tags that might be injected
-window.addEventListener('load', function() {
-    // Find all meta tags with name="google-site-verification"
-    const metaTags = document.querySelectorAll('meta[name="google-site-verification"]');
-    
-    // If there's more than one, remove all except the first one (yours)
-    if (metaTags.length > 1) {
-        for (let i = 1; i < metaTags.length; i++) {
-            metaTags[i].remove();
-        }
-        console.log('Removed duplicate verification tags');
-    }
-});
-</script>
 </body>
 </html>
+
 
 
 
